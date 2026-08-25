@@ -1,0 +1,152 @@
+{
+  "0xNyk/council-of-high-intelligence": {
+    "full_name": "0xNyk/council-of-high-intelligence",
+    "stars": 4142,
+    "license": "MIT",
+    "path": "imports/sources/0xNyk--council-of-high-intelligence"
+  },
+  "0xSteph/pentest-ai-agents": {
+    "full_name": "0xSteph/pentest-ai-agents",
+    "stars": 2158,
+    "license": "MIT",
+    "path": "imports/sources/0xSteph--pentest-ai-agents"
+  },
+  "0xfurai/claude-code-subagents": {
+    "full_name": "0xfurai/claude-code-subagents",
+    "stars": 989,
+    "license": "MIT",
+    "path": "imports/sources/0xfurai--claude-code-subagents"
+  },
+  "Donchitos/Claude-Code-Game-Studios": {
+    "full_name": "Donchitos/Claude-Code-Game-Studios",
+    "stars": 24514,
+    "license": "MIT",
+    "path": "imports/sources/Donchitos--Claude-Code-Game-Studios"
+  },
+  "Doriandarko/maestro": {
+    "full_name": "Doriandarko/maestro",
+    "stars": 4357,
+    "license": null,
+    "path": "imports/sources/Doriandarko--maestro"
+  },
+  "HazAT/pi-interactive-subagents": {
+    "full_name": "HazAT/pi-interactive-subagents",
+    "stars": 627,
+    "license": "MIT",
+    "path": "imports/sources/HazAT--pi-interactive-subagents"
+  },
+  "JosephHampton/awesome-gemini-cli-subagents": {
+    "full_name": "JosephHampton/awesome-gemini-cli-subagents",
+    "stars": 45,
+    "license": "NOASSERTION",
+    "path": "imports/sources/JosephHampton--awesome-gemini-cli-subagents"
+  },
+  "Raheel2774/agency-agents": {
+    "full_name": "Raheel2774/agency-agents",
+    "stars": 10,
+    "license": "MIT",
+    "path": "imports/sources/Raheel2774--agency-agents"
+  },
+  "VoltAgent/awesome-claude-code-subagents": {
+    "full_name": "VoltAgent/awesome-claude-code-subagents",
+    "stars": 24613,
+    "license": "MIT",
+    "path": "imports/sources/VoltAgent--awesome-claude-code-subagents"
+  },
+  "VoltAgent/awesome-codex-subagents": {
+    "full_name": "VoltAgent/awesome-codex-subagents",
+    "stars": 6023,
+    "license": "MIT",
+    "path": "imports/sources/VoltAgent--awesome-codex-subagents"
+  },
+  "alirezarezvani/claude-skills": {
+    "full_name": "alirezarezvani/claude-skills",
+    "stars": 24925,
+    "license": "MIT",
+    "path": "imports/sources/alirezarezvani--claude-skills"
+  },
+  "amrekansky/headless-pm": {
+    "full_name": "amrekansky/headless-pm",
+    "stars": 8,
+    "license": "NOASSERTION",
+    "path": "imports/sources/amrekansky--headless-pm"
+  },
+  "ankitmundada/awesome-gemini-cli-subagents": {
+    "full_name": "ankitmundada/awesome-gemini-cli-subagents",
+    "stars": 37,
+    "license": "MIT",
+    "path": "imports/sources/ankitmundada--awesome-gemini-cli-subagents"
+  },
+  "arbazkhan971/godmode": {
+    "full_name": "arbazkhan971/godmode",
+    "stars": 25,
+    "license": "MIT",
+    "path": "imports/sources/arbazkhan971--godmode"
+  },
+  "cdeust/zetetic-team-subagents": {
+    "full_name": "cdeust/zetetic-team-subagents",
+    "stars": 7,
+    "license": "MIT",
+    "path": "imports/sources/cdeust--zetetic-team-subagents"
+  },
+  "gemini-cli-extensions/conductor": {
+    "full_name": "gemini-cli-extensions/conductor",
+    "stars": 3709,
+    "license": "Apache-2.0",
+    "path": "imports/sources/gemini-cli-extensions--conductor"
+  },
+  "iannuttall/claude-agents": {
+    "full_name": "iannuttall/claude-agents",
+    "stars": 2049,
+    "license": "MIT",
+    "path": "imports/sources/iannuttall--claude-agents"
+  },
+  "lst97/claude-code-sub-agents": {
+    "full_name": "lst97/claude-code-sub-agents",
+    "stars": 1672,
+    "license": "MIT",
+    "path": "imports/sources/lst97--claude-code-sub-agents"
+  },
+  "roy2392/sdlc-subagents-cli": {
+    "full_name": "roy2392/sdlc-subagents-cli",
+    "stars": 9,
+    "license": "MIT",
+    "path": "imports/sources/roy2392--sdlc-subagents-cli"
+  },
+  "shinpr/sub-agents-mcp": {
+    "full_name": "shinpr/sub-agents-mcp",
+    "stars": 96,
+    "license": "MIT",
+    "path": "imports/sources/shinpr--sub-agents-mcp"
+  },
+  "shinpr/sub-agents-skills": {
+    "full_name": "shinpr/sub-agents-skills",
+    "stars": 80,
+    "license": "MIT",
+    "path": "imports/sources/shinpr--sub-agents-skills"
+  },
+  "sodam-ai/SoDam-Agent": {
+    "full_name": "sodam-ai/SoDam-Agent",
+    "stars": 16,
+    "license": "Apache-2.0",
+    "path": "imports/sources/sodam-ai--SoDam-Agent"
+  },
+  "tintinweb/pi-subagents": {
+    "full_name": "tintinweb/pi-subagents",
+    "stars": 953,
+    "license": "MIT",
+    "path": "imports/sources/tintinweb--pi-subagents"
+  },
+  "wshobson/agents": {
+    "full_name": "wshobson/agents",
+    "stars": 39099,
+    "license": "MIT",
+    "path": "imports/sources/wshobson--agents"
+  },
+  "zubair-trabzada/ai-marketing-claude": {
+    "full_name": "zubair-trabzada/ai-marketing-claude",
+    "stars": 2542,
+    "license": "MIT",
+    "path": "imports/sources/zubair-trabzada--ai-marketing-claude"
+  }
+}

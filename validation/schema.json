@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-agy-subagents.dev/schemas/agy-agent.schema.json",
+  "title": "AGY Subagent",
+  "description": "Canonical AGY subagent format: YAML frontmatter + Markdown system prompt.",
+  "type": "object",
+  "required": ["name", "description"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-_]+$",
+      "description": "Unique slug used to invoke the subagent."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short summary the parent agent uses to decide when to invoke this subagent."
+    },
+    "kind": { "type": "string", "enum": ["local", "remote"], "default": "local" },
+    "model": { "type": "string", "default": "inherit" },
+    "temperature": { "type": "number", "minimum": 0.0, "maximum": 2.0 },
+    "max_turns": { "type": "integer", "minimum": 1 },
+    "timeout_mins": { "type": "integer", "minimum": 1 },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tool allow-list. Supports *, mcp_*, mcp_server_* wildcards."
+    },
+    "mcpServers": {
+      "oneOf": [
+        { "type": "object", "additionalProperties": true },
+        { "type": "array", "items": { "type": "string" } }
+      ]
+    },
+    "agy": {
+      "type": "object",
+      "description": "Provenance and conversion metadata maintained by the importer.",
+      "properties": {
+        "version": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "compatibility": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "fully-compatible",
+                "requires-mcp",
+                "needs-tool-mapping",
+                "requires-manual-conversion",
+                "unsupported"
+              ]
+            },
+            "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "notes": { "type": "string" }
+          },
+          "required": ["status", "score"]
+        },
+        "validation": { "type": "string", "enum": ["passed", "failed", "pending"] },
+        "imported": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "repo": { "type": "string" },
+              "author": { "type": "string" },
+              "license": { "type": "string" },
+              "url": { "type": "string" },
+              "path": { "type": "string" },
+              "format": { "type": "string" }
+            },
+            "required": ["repo"]
+          }
+        }
+      }
+    }
+  }
+}

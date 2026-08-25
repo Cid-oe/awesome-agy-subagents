@@ -1,0 +1,28 @@
+# todoist
+
+Todoist tasks and projects.
+
+## Category
+**productivity**
+
+## Transport
+Streamable HTTP
+
+## Usage
+
+```
+todoist(...)
+```
+
+## Platforms
+All
+
+## Referenced by imported agents
+Not yet referenced by any imported agent (standard integration).
+
+
+
+## Compatibility
+
+- AGY: available via `mcpServers` frontmatter
+- Claude Code: `mcp__todoist__*` tools

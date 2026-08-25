@@ -1,0 +1,122 @@
+# Tools Catalog
+
+Total documented tools: **113**
+
+## Core AGY built-in tools
+
+- [`read_file`](core/read_file.md) — Read a file's contents, optionally with line ranges.
+- [`write_file`](core/write_file.md) — Create or overwrite a file with full content.
+- [`edit_file`](core/edit_file.md) — Apply a targeted string replacement to a file.
+- [`replace_file_content`](core/replace_file_content.md) — Replace file content matching a pattern.
+- [`view_file`](core/view_file.md) — View a file (read-only) with syntax awareness.
+- [`grep`](core/grep.md) — Search file contents for a regular expression.
+- [`grep_search`](core/grep_search.md) — Structured content search with context lines.
+- [`glob`](core/glob.md) — Find files matching a glob pattern.
+- [`list_dir`](core/list_dir.md) — List a directory's contents.
+- [`run_command`](core/run_command.md) — Execute a shell command in the environment.
+- [`run_shell_command`](core/run_shell_command.md) — Execute a shell command with cwd/argument control.
+- [`send_message`](core/send_message.md) — Send a message to the parent/user in the session.
+- [`find_by_name`](core/find_by_name.md) — Locate a file by name across the project.
+- [`read_url_content`](core/read_url_content.md) — Read the content of a URL as text/markdown.
+- [`web_search`](core/web_search.md) — Search the web and return ranked results.
+- [`web_fetch`](core/web_fetch.md) — Fetch a URL and extract readable content.
+- [`schedule`](core/schedule.md) — Schedule a task or reminder for the session.
+- [`todo`](core/todo.md) — Maintain a structured task list.
+- [`define_subagent`](core/define_subagent.md) — Define a transient subagent at runtime.
+- [`invoke_subagent`](core/invoke_subagent.md) — Invoke a defined subagent and await its result.
+
+## MCP server integrations
+
+- [`github`](mcp/github.md) — GitHub repos, issues, PRs, Actions, and code search.
+- [`gitlab`](mcp/gitlab.md) — GitLab repos, merge requests, CI, and issues.
+- [`git`](mcp/git.md) — Read-only git inspection: log, diff, status, blame.
+- [`bitbucket`](mcp/bitbucket.md) — Bitbucket repos, PRs, and pipelines.
+- [`azure-devops`](mcp/azure-devops.md) — Azure DevOps work items, repos, and pipelines.
+- [`postgres`](mcp/postgres.md) — PostgreSQL queries, schema, and introspection.
+- [`mysql`](mcp/mysql.md) — MySQL/MariaDB queries and schema inspection.
+- [`sqlite`](mcp/sqlite.md) — SQLite query and inspection.
+- [`redis`](mcp/redis.md) — Redis data structures, keys, and commands.
+- [`mongodb`](mcp/mongodb.md) — MongoDB queries and collection inspection.
+- [`supabase`](mcp/supabase.md) — Supabase database, auth, and storage.
+- [`neo4j`](mcp/neo4j.md) — Neo4j graph queries and traversal.
+- [`duckdb`](mcp/duckdb.md) — In-process analytical SQL via DuckDB.
+- [`clickhouse`](mcp/clickhouse.md) — ClickHouse analytical queries.
+- [`elasticsearch`](mcp/elasticsearch.md) — Elasticsearch search and index operations.
+- [`bigquery`](mcp/bigquery.md) — Google BigQuery SQL and dataset inspection.
+- [`snowflake`](mcp/snowflake.md) — Snowflake data warehouse queries.
+- [`aws`](mcp/aws.md) — AWS resource inspection and operations.
+- [`aws-s3`](mcp/aws-s3.md) — Amazon S3 bucket and object management.
+- [`azure`](mcp/azure.md) — Microsoft Azure resource management.
+- [`gcp`](mcp/gcp.md) — Google Cloud resource inspection.
+- [`terraform`](mcp/terraform.md) — Terraform plan/state inspection.
+- [`docker`](mcp/docker.md) — Docker containers, images, and volumes.
+- [`kubernetes`](mcp/kubernetes.md) — Kubernetes pods, deployments, and clusters.
+- [`helm`](mcp/helm.md) — Helm chart inspection and release management.
+- [`podman`](mcp/podman.md) — Podman container management.
+- [`puppeteer`](mcp/puppeteer.md) — Headless Chrome automation (navigate, click, screenshot).
+- [`playwright`](mcp/playwright.md) — Cross-browser automation and testing.
+- [`browser-use`](mcp/browser-use.md) — Browser automation for agent-driven web tasks.
+- [`chrome-devtools`](mcp/chrome-devtools.md) — Chrome DevTools Protocol debugging and inspection.
+- [`firecrawl`](mcp/firecrawl.md) — Web scraping and crawling with markdown extraction.
+- [`brave-search`](mcp/brave-search.md) — Brave-powered web search.
+- [`tavily`](mcp/tavily.md) — Real-time web search API.
+- [`exa`](mcp/exa.md) — Semantic and neural web search.
+- [`serper`](mcp/serper.md) — Google SERP API search.
+- [`perplexity`](mcp/perplexity.md) — Perplexity answer-engine search.
+- [`duckduckgo`](mcp/duckduckgo.md) — DuckDuckGo search.
+- [`slack`](mcp/slack.md) — Slack channels, messages, and threads.
+- [`notion`](mcp/notion.md) — Notion pages, databases, and search.
+- [`linear`](mcp/linear.md) — Linear issues, projects, and cycles.
+- [`jira`](mcp/jira.md) — Jira issues, boards, and sprints.
+- [`confluence`](mcp/confluence.md) — Confluence pages and spaces.
+- [`asana`](mcp/asana.md) — Asana tasks and projects.
+- [`trello`](mcp/trello.md) — Trello boards, lists, and cards.
+- [`todoist`](mcp/todoist.md) — Todoist tasks and projects.
+- [`filesystem`](mcp/filesystem.md) — Path-scoped filesystem read/write/search.
+- [`memory`](mcp/memory.md) — Persistent knowledge-graph memory.
+- [`obsidian`](mcp/obsidian.md) — Obsidian vault notes and links.
+- [`markitdown`](mcp/markitdown.md) — Convert documents (PDF, DOCX, ...) to markdown.
+- [`sentry`](mcp/sentry.md) — Sentry errors, issues, and release health.
+- [`datadog`](mcp/datadog.md) — Datadog metrics, logs, and traces.
+- [`prometheus`](mcp/prometheus.md) — Prometheus metrics querying.
+- [`grafana`](mcp/grafana.md) — Grafana dashboards and queries.
+- [`new-relic`](mcp/new-relic.md) — New Relic APM and telemetry.
+- [`gmail`](mcp/gmail.md) — Gmail send/search/read.
+- [`google-workspace`](mcp/google-workspace.md) — Google Drive, Docs, Sheets, and Calendar.
+- [`telegram`](mcp/telegram.md) — Telegram messaging and bots.
+- [`discord`](mcp/discord.md) — Discord channels and messages.
+- [`discord-webhook`](mcp/discord-webhook.md) — Discord webhook notifications.
+- [`fetch`](mcp/fetch.md) — Fetch URLs and extract markdown.
+- [`context7`](mcp/context7.md) — Up-to-date library documentation lookup.
+- [`sequential-thinking`](mcp/sequential-thinking.md) — Structured multi-step reasoning.
+- [`time`](mcp/time.md) — Current time and timezone conversion.
+- [`calendar`](mcp/calendar.md) — Calendar events and scheduling.
+- [`hubspot`](mcp/hubspot.md) — HubSpot contacts, deals, and tickets.
+- [`salesforce`](mcp/salesforce.md) — Salesforce objects and records.
+- [`stripe`](mcp/stripe.md) — Stripe payments, customers, and invoices.
+- [`zendesk`](mcp/zendesk.md) — Zendesk tickets and help center.
+- [`intercom`](mcp/intercom.md) — Intercom conversations and contacts.
+- [`openai`](mcp/openai.md) — OpenAI models for generation and embeddings.
+- [`anthropic`](mcp/anthropic.md) — Anthropic Claude API access.
+- [`google-gemini`](mcp/google-gemini.md) — Google Gemini model access.
+- [`ollama`](mcp/ollama.md) — Local LLM inference via Ollama.
+- [`lmstudio`](mcp/lmstudio.md) — Local LLM inference via LM Studio.
+- [`groq`](mcp/groq.md) — Groq fast LLM inference.
+- [`mistral`](mcp/mistral.md) — Mistral model access.
+- [`cohere`](mcp/cohere.md) — Cohere LLM and embeddings.
+- [`huggingface`](mcp/huggingface.md) — Hugging Face models and datasets.
+- [`replicate`](mcp/replicate.md) — Replicate model inference.
+- [`mariadb`](mcp/mariadb.md) — MariaDB queries and schema inspection.
+- [`couchdb`](mcp/couchdb.md) — CouchDB documents and views.
+- [`influxdb`](mcp/influxdb.md) — InfluxDB time-series queries.
+- [`presto`](mcp/presto.md) — Presto/Trino distributed SQL queries.
+- [`scylladb`](mcp/scylladb.md) — ScyllaDB NoSQL queries.
+- [`snyk`](mcp/snyk.md) — Snyk vulnerability scanning and remediation.
+- [`semgrep`](mcp/semgrep.md) — Semgrep static analysis for security.
+- [`jenkins`](mcp/jenkins.md) — Jenkins builds, jobs, and logs.
+- [`circleci`](mcp/circleci.md) — CircleCI pipelines and workflows.
+- [`math`](mcp/math.md) — Symbolic and numeric math evaluation.
+- [`weather`](mcp/weather.md) — Current weather and forecasts by location.
+- [`rss`](mcp/rss.md) — RSS feed reading and parsing.
+- [`hacker-news`](mcp/hacker-news.md) — Hacker News stories and comments.
+- [`google-maps`](mcp/google-maps.md) — Google Maps geocoding and places.

@@ -1,0 +1,28 @@
+# mistral
+
+Mistral model access.
+
+## Category
+**ai**
+
+## Transport
+Streamable HTTP
+
+## Usage
+
+```
+mistral(...)
+```
+
+## Platforms
+All
+
+## Referenced by imported agents
+Not yet referenced by any imported agent (standard integration).
+
+
+
+## Compatibility
+
+- AGY: available via `mcpServers` frontmatter
+- Claude Code: `mcp__mistral__*` tools
