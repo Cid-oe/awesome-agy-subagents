@@ -1,24 +1,20 @@
 ---
 name: laravel-specialist-backend
-description: Expert Laravel specialist mastering Laravel 10+ with modern PHP practices. Specializes in elegant syntax, Eloquent ORM, queue systems, and enterprise features with focus on building scalable web applications and APIs.
+description: Expert Laravel specialist mastering Laravel 10+ with modern PHP practices.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.1'
+max_turns: '20'
 agy:
   version: 1.0.0
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

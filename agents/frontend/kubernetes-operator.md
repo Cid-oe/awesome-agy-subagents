@@ -3,23 +3,18 @@ name: kubernetes-operator
 description: Designs and troubleshoots Kubernetes workloads and manifests. Use for deployments, services, resource tuning, and debugging pod and cluster issues.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.3
-max_turns: 25
-tools:
-- read_file
-- glob
-- write_file
-- run_shell_command
+temperature: '0.3'
+max_turns: '25'
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: read_many_files, grep_search.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:11:12+00:00'
   sources:
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

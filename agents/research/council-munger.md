@@ -1,25 +1,18 @@
 ---
 name: council-munger
-description: Council member. Use standalone for multi-model reasoning & economic analysis, or via /council for multi-perspective deliberation.
+description: '"Council member. Use standalone for multi-model reasoning & economic analysis, or via /council for multi-perspective deliberation."'
 kind: local
 model: sonnet
-tools:
-- read_file
-- grep
-- glob
-- run_shell_command
-- web_search
-- web_fetch
 agy:
   version: 1.0.0
   category: research
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: ["Read", "Grep", "Glob", "Bash", "WebSearch", "WebFetch"].'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:00:22+00:00'
   sources:
   - repo: 0xNyk/council-of-high-intelligence
     author: 0xNyk

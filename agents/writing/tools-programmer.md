@@ -1,9 +1,9 @@
 ---
 name: tools-programmer
-description: 'The Tools Programmer builds internal development tools: editor extensions, content authoring tools, debug utilities, and pipeline automation. Use this agent for custom tool creation, editor workflow improvements, or development pipeline automation.'
+description: '"The Tools Programmer builds internal development tools: editor extensions, content authoring tools, debug utilities, and pipeline automation. Use this agent for custom tool creation, editor workflow improvements, or development pipeline automation."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

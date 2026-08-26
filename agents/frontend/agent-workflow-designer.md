@@ -3,22 +3,18 @@ name: agent-workflow-designer
 description: Designs multi-agent workflows and subagent systems. Use to plan how several subagents should divide work, hand off, and combine into a reliable pipeline.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.35
-max_turns: 20
-tools:
-- read_file
-- glob
-- write_file
+temperature: '0.35'
+max_turns: '20'
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: read_many_files, grep_search.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:11:12+00:00'
   sources:
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

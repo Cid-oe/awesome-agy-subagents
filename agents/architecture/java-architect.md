@@ -1,6 +1,6 @@
 ---
 name: java-architect
-description: Use this agent when designing enterprise Java architectures, migrating Spring Boot applications, or establishing microservices patterns for scalable cloud-native systems.
+description: '"Use this agent when designing enterprise Java architectures, migrating Spring Boot applications, or establishing microservices patterns for scalable cloud-native systems."'
 kind: local
 model: sonnet
 tools:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,12 +27,24 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/java-architect.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/java-architect.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/02-language-specialists/java-architect.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/language-experts/java-architect.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

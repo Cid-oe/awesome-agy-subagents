@@ -1,6 +1,6 @@
 ---
 name: arm-cortex-expert
-description: Senior embedded software engineer specializing in firmware and driver development for ARM Cortex-M microcontrollers (Teensy, STM32, nRF52, SAMD). Decades of experience writing reliable, optimized, and maintainable embedded code with deep expertise in memory barriers, DMA/cache coherency, interrupt-driven I/O, and peripheral drivers.
+description: '>'
 kind: local
 model: inherit
 agy:
@@ -8,11 +8,11 @@ agy:
   category: embedded
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [].'
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson

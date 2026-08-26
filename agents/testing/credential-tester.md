@@ -1,16 +1,8 @@
 ---
 name: credential-tester
-description: Delegates to this agent when the user asks about password attacks, credential testing, hash cracking, brute force methodology, default credential checks, password spraying, or needs help with tools like hydra, john, hashcat, medusa, or CrackMapExec for authorized penetration testing engagements.
+description: '>-'
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: testing
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

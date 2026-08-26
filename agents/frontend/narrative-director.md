@@ -1,9 +1,9 @@
 ---
 name: narrative-director
-description: The Narrative Director owns story architecture, world-building, character design, and dialogue strategy. Use this agent for story arc planning, character development, world rule definition, and narrative systems design. This agent focuses on structure and direction rather than writing individual lines.
+description: '"The Narrative Director owns story architecture, world-building, character design, and dialogue strategy. Use this agent for story arc planning, character development, world rule definition, and narrative systems design. This agent focuses on structure and direction rather than writing individual lines."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

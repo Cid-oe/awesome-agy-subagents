@@ -3,7 +3,7 @@ name: hub-coordinator
 description: Coordinator for AgentHub multi-agent collaboration sessions. Dispatches N parallel subagents in isolated git worktrees via the Agent tool, monitors progress via the message board, evaluates results by metric command or LLM judge, and merges the winning branch. Acts as the main Claude Code session role for `/hub:*` commands.
 kind: local
 model: inherit
-max_turns: 100
+max_turns: '100'
 tools:
 - read_file
 - write_file
@@ -19,7 +19,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Agent, Bash(git, worktree, *), Bash(git, branch, *), Bash(git, checkout, *), Bash(git, merge, *), Bash(git, log, *), Bash(git, diff, *), Bash(git, status, *), Bash(python, *), Bash(mkdir, *), Bash(ls, *), Bash(cat, *).'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

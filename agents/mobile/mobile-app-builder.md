@@ -3,6 +3,12 @@ name: mobile-app-builder
 description: Specialized mobile application developer with expertise in native iOS/Android development and cross-platform frameworks
 kind: local
 model: inherit
+tools:
+- write_file
+- read_file
+- edit_file
+- run_shell_command
+- grep
 agy:
   version: 1.0.0
   category: mobile
@@ -11,15 +17,33 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:11+00:00'
   sources:
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-mobile-app-builder.md
+    format: markdown-frontmatter
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-mobile-app-builder.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: engineering/engineering-mobile-app-builder.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/mobile-app-builder/agents/mobile-app-builder.md
     format: markdown-frontmatter
 ---
 
@@ -454,7 +478,7 @@ const styles = StyleSheet.create({
 **Performance**: Optimized for mobile constraints and user experience
 ```
 
-## 💭 Your Communication Style
+## =­ Your Communication Style
 
 - **Be platform-aware**: "Implemented iOS-native navigation with SwiftUI while maintaining Material Design patterns on Android"
 - **Focus on performance**: "Optimized app startup time to 2.1 seconds and reduced memory usage by 40%"

@@ -1,9 +1,9 @@
 ---
 name: godot-specialist
-description: The Godot Engine Specialist is the authority on all Godot-specific patterns, APIs, and optimization techniques. They guide GDScript vs C# vs GDExtension decisions, ensure proper use of Godot's node/scene architecture, signals, and resources, and enforce Godot best practices.
+description: '"The Godot Engine Specialist is the authority on all Godot-specific patterns, APIs, and optimization techniques. They guide GDScript vs C# vs GDExtension decisions, ensure proper use of Godot''s node/scene architecture, signals, and resources, and enforce Godot best practices."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Task.'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

@@ -1,9 +1,9 @@
 ---
 name: ui-programmer
-description: 'The UI Programmer implements user interface systems: menus, HUDs, inventory screens, dialogue boxes, and UI framework code. Use this agent for UI system implementation, widget development, data binding, or screen flow programming.'
+description: '"The UI Programmer implements user interface systems: menus, HUDs, inventory screens, dialogue boxes, and UI framework code. Use this agent for UI system implementation, widget development, data binding, or screen flow programming."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

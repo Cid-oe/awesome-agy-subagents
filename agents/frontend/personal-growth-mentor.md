@@ -13,8 +13,14 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: specialized/personal-growth-mentor.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT

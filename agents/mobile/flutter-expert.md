@@ -6,8 +6,8 @@ model: inherit
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
@@ -27,23 +27,17 @@ agy:
     url: https://github.com/wshobson/agents
     path: plugins/multi-platform-apps/agents/flutter-expert.md
     format: markdown-frontmatter
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/02-language-specialists/flutter-expert.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/flutter-expert.md
     format: markdown-frontmatter
-  - repo: 0xfurai/claude-code-subagents
-    author: 0xfurai
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
     license: MIT
-    url: https://github.com/0xfurai/claude-code-subagents
-    path: agents/flutter-expert.md
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/flutter-expert.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -51,6 +45,30 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/02-language-specialists/flutter-expert.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/language-experts/flutter-expert.md
+    format: markdown-frontmatter
+  - repo: 0xfurai/claude-code-subagents
+    author: 0xfurai
+    license: MIT
+    url: https://github.com/0xfurai/claude-code-subagents
+    path: agents/flutter-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/flutter-expert.md
+    format: markdown-frontmatter
+  - repo: ankitmundada/awesome-gemini-cli-subagents
+    author: ankitmundada
+    license: MIT
+    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
+    path: categories/02-language-specialists/flutter-expert.md
+    format: markdown-frontmatter
 ---
 
 You are a Flutter expert specializing in high-performance, multi-platform applications with deep knowledge of the Flutter 2025 ecosystem.

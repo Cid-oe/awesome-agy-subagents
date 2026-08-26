@@ -1,6 +1,6 @@
 ---
 name: php-pro
-description: Use this agent when working with PHP 8.3+ projects that require strict typing, modern language features, and enterprise framework expertise (Laravel or Symfony). Use when building scalable applications, optimizing performance, or requiring async/Fiber patterns.
+description: '"Use this agent when working with PHP 8.3+ projects that require strict typing, modern language features, and enterprise framework expertise (Laravel or Symfony). Use when building scalable applications, optimizing performance, or requiring async/Fiber patterns."'
 kind: local
 model: sonnet
 tools:
@@ -19,7 +19,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,23 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/php-pro.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/php-pro.md
+    format: markdown-frontmatter
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/web-scripting/agents/php-pro.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/php-pro.md
     format: markdown-frontmatter
 ---
 

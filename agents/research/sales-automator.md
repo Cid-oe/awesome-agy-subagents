@@ -12,13 +12,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/customer-sales-automation/agents/sales-automator.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/sales-automator.md
     format: markdown-frontmatter
 ---
 

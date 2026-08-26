@@ -16,14 +16,33 @@ agy:
   version: 1.0.0
   category: frontend
   tags:
+  - product_manager
   - Product Manager
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:13:44+00:00'
   sources:
+  - repo: VKirill/codex-starter-kit
+    author: VKirill
+    license: MIT
+    url: https://github.com/VKirill/codex-starter-kit
+    path: agents/product_manager.toml
+    format: toml
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: product/product-manager.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/product/product-manager.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -35,6 +54,18 @@ agy:
     license: MIT
     url: https://github.com/alirezarezvani/claude-skills
     path: agents/personas/product-manager.md
+    format: markdown-frontmatter
+  - repo: shanraisshan/claude-code-best-practice
+    author: shanraisshan
+    license: MIT
+    url: https://github.com/shanraisshan/claude-code-best-practice
+    path: development-workflows/rpi/.claude/agents/product-manager.md
+    format: markdown-frontmatter
+  - repo: ankitmundada/awesome-gemini-cli-subagents
+    author: ankitmundada
+    license: MIT
+    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
+    path: categories/08-business-product/product-manager.md
     format: markdown-frontmatter
 ---
 
@@ -498,3 +529,19 @@ Saying no publicly prevents repeated requests and builds trust.
 > "I will always tell you what we're NOT building and why. That list is as important as the roadmap — maybe more. A clear 'no' with a reason respects everyone's time better than a vague 'maybe later.'"
 
 > "My job isn't to have all the answers. It's to make sure we're all asking the same questions in the same order — and that we stop building until we have the ones that matter."
+
+<CODEx-TOOLING-SKILL-ROUTING>
+## Codex Tooling And Skill Routing
+
+Use this policy in interactive and spawned-agent work. Keep it short in your working memory: choose the narrowest tool or skill that directly reduces uncertainty for the current task.
+
+### MCP / Tool Routing
+- Use local files, project docs, and existing plans before external research.
+- Use GitNexus/Serena only when product or workflow decisions depend on actual code paths.
+- Use Context7 or official docs when requirements depend on current platform/API capabilities.
+- Use web search only for market/current external information after configured sources are insufficient.
+
+### Skill Routing
+- Prefer planning-methodology, task-decomposition, roadmap-methodology, product/research skills, technical writing, Superpowers brainstorming/writing-plans, and verification-before-completion as relevant.
+- Avoid implementation-heavy language/framework skills unless creating build-ready engineering tasks.
+</CODEx-TOOLING-SKILL-ROUTING>

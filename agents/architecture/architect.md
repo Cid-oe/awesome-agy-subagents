@@ -1,10 +1,9 @@
 ---
 name: architect
-description: Proactively analyze structural changes, decomposition decisions
+description: '"Proactively analyze structural changes, decomposition decisions"'
 kind: local
 model: opus
 tools:
-- read_file
 - run_shell_command
 - glob
 - grep
@@ -19,10 +18,17 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
+- read_file
+- web_search
+- web_fetch
+- list_dir
+- mcp__laravel-boost__search-docs
+- mcp__laravel-boost__database-schema
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
+- laravel-boost
 agy:
   version: 1.0.0
   category: architecture
@@ -30,9 +36,9 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 2 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 19 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
@@ -40,11 +46,149 @@ agy:
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/architect.md
     format: markdown-frontmatter
+  - repo: parcadei/Continuous-Claude-v3
+    author: parcadei
+    license: MIT
+    url: https://github.com/parcadei/Continuous-Claude-v3
+    path: .claude/agents/architect.md
+    format: markdown-frontmatter
+  - repo: Yeachan-Heo/oh-my-claudecode
+    author: Yeachan-Heo
+    license: MIT
+    url: https://github.com/Yeachan-Heo/oh-my-claudecode
+    path: agents/architect.md
+    format: markdown-frontmatter
+  - repo: affaan-m/ECC
+    author: affaan-m
+    license: MIT
+    url: https://github.com/affaan-m/ECC
+    path: agents/architect.md
+    format: markdown-frontmatter
+  - repo: affaan-m/ECC
+    author: affaan-m
+    license: MIT
+    url: https://github.com/affaan-m/ECC
+    path: .kiro/agents/architect.json
+    format: json
+  - repo: affaan-m/ECC
+    author: affaan-m
+    license: MIT
+    url: https://github.com/affaan-m/ECC
+    path: .kiro/agents/architect.md
+    format: markdown-frontmatter
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/ship-mate/agents/architect.md
+    format: markdown-frontmatter
+  - repo: ruvnet/ruflo
+    author: ruvnet
+    license: MIT
+    url: https://github.com/ruvnet/ruflo
+    path: plugins/ruflo-swarm/agents/architect.md
+    format: markdown-frontmatter
+  - repo: Q00/ouroboros
+    author: Q00
+    license: MIT
+    url: https://github.com/Q00/ouroboros
+    path: src/ouroboros/agents/architect.md
+    format: markdown-frontmatter
+  - repo: parcadei/Continuous-Claude-v3
+    author: parcadei
+    license: MIT
+    url: https://github.com/parcadei/Continuous-Claude-v3
+    path: .claude/agents/architect.json
+    format: json
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/cc-best/agents/architect.md
+    format: markdown-frontmatter
+  - repo: jeremylongshore/claude-code-plugins-plus-skills
+    author: jeremylongshore
+    license: MIT
+    url: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
+    path: plugins/ai-agency/hyperflow/agents/architect.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/fable-baton/agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: qwen/agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/src/agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: plugins/maestro/src/agents/architect.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: src/agents/architect.md
+    format: markdown-frontmatter
+  - repo: mischasigtermans/laravel-altitude
+    author: mischasigtermans
+    license: MIT
+    url: https://github.com/mischasigtermans/laravel-altitude
+    path: stubs/agents/architect.md
+    format: markdown-frontmatter
+  - repo: prime-radiant-inc/sprout
+    author: prime-radiant-inc
+    license: ''
+    url: https://github.com/prime-radiant-inc/sprout
+    path: root/agents/architect.md
+    format: markdown-frontmatter
+  - repo: dshakes/compass
+    author: dshakes
+    license: MIT
+    url: https://github.com/dshakes/compass
+    path: claude/agents/architect.md
+    format: markdown-frontmatter
+  - repo: dshakes/compass
+    author: dshakes
+    license: MIT
+    url: https://github.com/dshakes/compass
+    path: plugins/core/agents/architect.md
+    format: markdown-frontmatter
+  - repo: iabhisekbosepm/codex-god-setup
+    author: iabhisekbosepm
+    license: ''
+    url: https://github.com/iabhisekbosepm/codex-god-setup
+    path: agents/architect.md
+    format: markdown-frontmatter
+  - repo: SilentMoebuta/pi-roles
+    author: SilentMoebuta
+    license: MIT
+    url: https://github.com/SilentMoebuta/pi-roles
+    path: roles/architect.md
     format: markdown-frontmatter
 ---
 

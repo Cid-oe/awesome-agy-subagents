@@ -15,7 +15,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:03+00:00'
   sources:
   - repo: sodam-ai/SoDam-Agent
     author: sodam-ai

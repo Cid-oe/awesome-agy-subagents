@@ -1,6 +1,6 @@
 ---
 name: laravel-specialist
-description: Use when building Laravel 10+ applications, architecting Eloquent models with complex relationships, implementing queue systems for async processing, or optimizing API performance.
+description: '"Use when building Laravel 10+ applications, architecting Eloquent models with complex relationships, implementing queue systems for async processing, or optimizing API performance."'
 kind: local
 model: sonnet
 tools:
@@ -19,13 +19,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/laravel-specialist.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/laravel-specialist.md
     format: markdown-frontmatter
 ---
 

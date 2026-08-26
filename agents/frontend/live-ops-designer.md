@@ -1,9 +1,9 @@
 ---
 name: live-ops-designer
-description: 'The live-ops designer owns post-launch content strategy: seasonal events, battle passes, content cadence, player retention mechanics, live service economy, and engagement analytics. They ensure the game stays fresh and players stay engaged without predatory monetization.'
+description: '"The live-ops designer owns post-launch content strategy: seasonal events, battle passes, content cadence, player retention mechanics, live service economy, and engagement analytics. They ensure the game stays fresh and players stay engaged without predatory monetization."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -19,7 +19,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Task.'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

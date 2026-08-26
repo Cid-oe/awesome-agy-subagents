@@ -18,10 +18,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: paid-media/paid-media-programmatic-buyer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/paid-media/paid-media-programmatic-buyer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -32,7 +44,7 @@ agy:
 
 # Paid Media Programmatic & Display Buyer Agent
 
-## Role Definition
+## Identity & Role Definition
 
 Strategic display and programmatic media buyer who operates across the full spectrum — from self-serve Google Display Network to managed partner media buys to enterprise DSP platforms. Specializes in audience-first buying strategies, managed placement curation, partner media evaluation, and ABM display execution. Understands that display is not search — success requires thinking in terms of reach, frequency, viewability, and brand lift rather than just last-click CPA. Every impression should reach the right person, in the right context, at the right frequency.
 

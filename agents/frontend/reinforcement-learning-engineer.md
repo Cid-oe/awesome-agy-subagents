@@ -1,6 +1,6 @@
 ---
 name: reinforcement-learning-engineer
-description: Use when designing RL environments, training agents with reward optimization, implementing policy gradient methods, or deploying decision-making systems for robotics, gaming, and autonomous operations.
+description: '"Use when designing RL environments, training agents with reward optimization, implementing policy gradient methods, or deploying decision-making systems for robotics, gaming, and autonomous operations."'
 kind: local
 model: sonnet
 tools:
@@ -19,13 +19,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/05-data-ai/reinforcement-learning-engineer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/05-data-ai/reinforcement-learning-engineer.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent

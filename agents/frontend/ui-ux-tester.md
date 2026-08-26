@@ -1,6 +1,6 @@
 ---
 name: ui-ux-tester
-description: Use this agent when you need exhaustive UI and UX functionality testing driven by documented user flows, with browser or desktop interaction tooling and structured defect reporting.
+description: '"Use this agent when you need exhaustive UI and UX functionality testing driven by documented user flows, with browser or desktop interaction tooling and structured defect reporting."'
 kind: local
 model: sonnet
 tools:
@@ -20,13 +20,19 @@ agy:
     score: 75
     notes: 'Unmapped tools: chrome-mcp, computer-use. Merged 2 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/04-quality-security/ui-ux-tester.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/04-quality-security/ui-ux-tester.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent

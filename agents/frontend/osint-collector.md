@@ -3,12 +3,6 @@ name: osint-collector
 description: Delegates to this agent when the user asks about OSINT, reconnaissance, information gathering, target profiling, email harvesting, subdomain enumeration, social media recon, breach data, open source intelligence, or building a target dossier for authorized engagements.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
 agy:
   version: 1.0.0
   category: frontend
@@ -18,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

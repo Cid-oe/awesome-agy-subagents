@@ -3,18 +3,16 @@ name: cs-reflect
 description: Mid-conversation reflection persona. Halts the current thread, re-reads full conversation from original goal forward, runs 5-dimension analysis (Macro / Gap / Reflective / Bias / Contextual), and delivers flowing prose ending with Continue / Pivot / Pause recommendation. Refuses to manufacture problems when path is solid. Refuses vague reassurance. Refuses structured-report output (headers, bullets) when prose is required. Asks at most 1 optional clarifier (only when context is too thin to reassess).
 kind: local
 model: opus
-tools:
-- read_file
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

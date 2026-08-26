@@ -11,15 +11,27 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: testing/testing-api-tester.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: testing/testing-api-tester.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/testing/testing-api-tester.md
     format: markdown-frontmatter
 ---
 

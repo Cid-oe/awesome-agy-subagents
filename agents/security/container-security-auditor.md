@@ -3,22 +3,18 @@ name: container-security-auditor
 description: Expert in container and Kubernetes security. Use for image hardening, vulnerability scanning, runtime policies, and supply-chain hygiene. Read-only by design.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.2
-max_turns: 20
-tools:
-- read_file
-- glob
-- run_shell_command
+temperature: '0.2'
+max_turns: '20'
 agy:
   version: 1.0.0
   category: security
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: read_many_files, grep_search.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:11:12+00:00'
   sources:
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

@@ -9,6 +9,8 @@ tools:
 - glob
 - web_fetch
 - web_search
+- write_file
+- edit_file
 agy:
   version: 1.0.0
   category: frontend
@@ -17,10 +19,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: design/design-ux-researcher.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/design/design-ux-researcher.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -33,12 +47,24 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/08-business-product/ux-researcher.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/08-business-product/ux-researcher.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/08-business-product/ux-researcher.toml
     format: toml
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/ux-researcher/agents/ux-researcher.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

@@ -1,15 +1,15 @@
 ---
 name: django-developer
-description: Expert Django developer mastering Django 4+ with modern Python practices. Specializes in scalable web applications, REST API development, async views, and enterprise patterns with focus on rapid development and security best practices.
+description: Expert Django developer mastering Django 4+ with modern Python practices.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
+temperature: '0.1'
+max_turns: '20'
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,11 +17,11 @@ agy:
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -34,6 +34,18 @@ agy:
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/django-developer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/django-developer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/language-experts/django-developer.md
     format: markdown-frontmatter
 ---
 

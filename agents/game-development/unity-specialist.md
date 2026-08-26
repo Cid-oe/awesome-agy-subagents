@@ -1,9 +1,9 @@
 ---
 name: unity-specialist
-description: The Unity Engine Specialist is the authority on all Unity-specific patterns, APIs, and optimization techniques. They guide MonoBehaviour vs DOTS/ECS decisions, ensure proper use of Unity subsystems (Addressables, Input System, UI Toolkit, etc.), and enforce Unity best practices.
+description: '"The Unity Engine Specialist is the authority on all Unity-specific patterns, APIs, and optimization techniques. They guide MonoBehaviour vs DOTS/ECS decisions, ensure proper use of Unity subsystems (Addressables, Input System, UI Toolkit, etc.), and enforce Unity best practices."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Task.'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

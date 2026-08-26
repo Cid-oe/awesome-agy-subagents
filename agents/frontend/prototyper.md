@@ -1,9 +1,9 @@
 ---
 name: prototyper
-description: 'Prototyping specialist. Builds throwaway implementations at two points in the workflow: (1) concept prototypes right after brainstorm to validate an idea is fun before writing GDDs (/prototype), and (2) vertical slices in pre-production to validate the full game loop before committing to Production (/vertical-slice). Standards are intentionally relaxed for speed.'
+description: '"Prototyping specialist. Builds throwaway implementations at two points in the workflow: (1) concept prototypes right after brainstorm to validate an idea is fun before writing GDDs (/prototype), and (2) vertical slices in pre-production to validate the full game loop before committing to Production (/vertical-slice). Standards are intentionally relaxed for speed."'
 kind: local
 model: sonnet
-max_turns: 25
+max_turns: '25'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

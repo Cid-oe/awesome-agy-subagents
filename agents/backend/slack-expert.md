@@ -1,6 +1,6 @@
 ---
 name: slack-expert
-description: Use this agent when developing Slack applications, implementing Slack API integrations, or reviewing Slack bot code for security and best practices.
+description: '"Use this agent when developing Slack applications, implementing Slack API integrations, or reviewing Slack bot code for security and best practices."'
 kind: local
 model: sonnet
 tools:
@@ -21,7 +21,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent

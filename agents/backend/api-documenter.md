@@ -1,18 +1,18 @@
 ---
 name: api-documenter
-description: Expert API documenter specializing in creating comprehensive, developer-friendly API documentation. Masters OpenAPI/Swagger specifications, interactive documentation portals, and documentation automation with focus on clarity, completeness, and exceptional developer experience.
+description: Expert API documenter specializing in creating comprehensive, developer-friendly
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.35
-max_turns: 15
+temperature: '0.35'
+max_turns: '15'
 tools:
 - read_file
 - write_file
-- web_fetch
-- web_search
 - edit_file
 - glob
 - grep
+- web_fetch
+- web_search
 - run_shell_command
 - list_dir
 - mcp__context7__resolve-library-id
@@ -24,11 +24,11 @@ agy:
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 5 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 13 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -42,11 +42,41 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/07-specialized-domains/api-documenter.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/developer-experience/api-documenter.md
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/07-specialized-domains/api-documenter.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: 07-plugins/documentation/agents/api-documenter.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: ja/07-plugins/documentation/agents/api-documenter.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: uk/07-plugins/documentation/agents/api-documenter.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: vi/07-plugins/documentation/agents/api-documenter.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: zh/07-plugins/documentation/agents/api-documenter.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -54,11 +84,41 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/07-specialized-domains/api-documenter.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-documentation/agents/api-documenter.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/api-documenter.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/specialization/api-documenter.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/developer-experience/api-documenter.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/api-documenter.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/specialization/api-documenter.md
     format: markdown-frontmatter
 ---
 

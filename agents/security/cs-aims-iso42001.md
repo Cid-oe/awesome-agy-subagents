@@ -1,24 +1,22 @@
 ---
 name: cs-aims-iso42001
-description: 'ISO/IEC 42001:2023 AI Management System (AIMS) implementation + internal audit operator. Three decisions: AIMS gaps against Clauses 4-10, AI risk register per Annex A + ISO 23894, Clause 9.2 internal audit plan. NOT executive AI strategy (see cs-caio-advisor). NOT EU AI Act conformity (see cs-ai-act-compliance).'
+description: '"ISO/IEC 42001:2023 AI Management System (AIMS) implementation + internal audit operator. Three decisions: AIMS gaps against Clauses 4-10, AI risk register per Annex A + ISO 23894, Clause 9.2 internal audit plan. NOT executive AI strategy (see cs-caio-advisor). NOT EU AI Act conformity (see cs-ai-act-compliance)."'
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - run_shell_command
 - grep
-- glob
 agy:
   version: 1.0.0
   category: security
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, Glob].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

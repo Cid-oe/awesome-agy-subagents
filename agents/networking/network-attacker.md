@@ -3,15 +3,6 @@ name: network-attacker
 description: Delegates to this agent when the user wants layer-2/layer-3 offensive testing on an authorized internal network — LLMNR/NBT-NS/mDNS poisoning, ARP spoofing and MITM, NTLM relay, IPv6/mitm6 takeover, VLAN hopping, and pivoting. Executes with per-command approval and scope validation. Distinct from recon-advisor (enumeration) and ad-attacker (AD protocol attacks).
 kind: local
 model: sonnet
-tools:
-- run_shell_command
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: networking
@@ -21,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

@@ -1,31 +1,32 @@
 ---
 name: scrum-master-frontend
-description: Expert Scrum Master specializing in agile transformation, team facilitation, and continuous improvement. Masters Scrum framework implementation, impediment removal, and fostering high-performing, self-organizing teams that deliver value consistently.
+description: Expert Scrum Master specializing in agile transformation, team facilitation,
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.5
-max_turns: 20
-tools:
-- read_file
-- write_file
-- web_fetch
-- web_search
+temperature: '0.5'
+max_turns: '20'
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/08-business-product/scrum-master.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/business-product/scrum-master.md
     format: markdown-frontmatter
 ---
 

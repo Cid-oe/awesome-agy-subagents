@@ -20,7 +20,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: TaskGet, TaskUpdate, SendMessage.'
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson

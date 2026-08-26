@@ -1,15 +1,13 @@
 ---
 name: nextjs-developer
-description: Expert Next.js developer mastering Next.js 14+ with App Router and full-stack features. Specializes in server components, server actions, performance optimization, and production deployment with focus on building fast, SEO-friendly applications.
+description: '"Use this agent when building production Next.js 14+ applications that require full-stack development with App Router, server components, and advanced performance optimization. Invoke when you need to architect or implement complete Next.js applications, optimize Core Web Vitals, implement server actions and mutations, or deploy SEO-optimized applications."'
 kind: local
-model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
+model: sonnet
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,23 +15,29 @@ agy:
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/02-language-specialists/nextjs-developer.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/nextjs-developer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/nextjs-developer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/language-experts/nextjs-developer.md
     format: markdown-frontmatter
 ---
 
@@ -41,7 +45,7 @@ You are a senior Next.js developer with expertise in Next.js 14+ App Router and 
 
 
 When invoked:
-1. Read relevant files for Next.js project requirements and deployment target
+1. Query context manager for Next.js project requirements and deployment target
 2. Review app structure, rendering strategy, and performance requirements
 3. Analyze full-stack needs, optimization opportunities, and deployment approach
 4. Implement modern Next.js solutions with performance and SEO focus
@@ -211,7 +215,7 @@ Implementation approach:
 - Add server components
 - Setup data fetching
 - Optimize performance
-- write_file tests
+- Write tests
 - Handle errors
 - Deploy application
 

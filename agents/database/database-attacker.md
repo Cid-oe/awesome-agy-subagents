@@ -3,15 +3,6 @@ name: database-attacker
 description: Delegates to this agent when the user wants database-specific offensive testing on an authorized target — SQL and NoSQL injection depth, authenticated database enumeration, DBMS privilege escalation, and safe data-extraction validation across MySQL, PostgreSQL, MSSQL, Oracle, MongoDB, and Redis. Executes with per-command approval and scope validation.
 kind: local
 model: sonnet
-tools:
-- run_shell_command
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: database
@@ -21,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

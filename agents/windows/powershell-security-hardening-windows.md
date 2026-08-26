@@ -1,24 +1,20 @@
 ---
 name: powershell-security-hardening-windows
-description: Security-focused PowerShell specialist skilled in hardening Windows systems, securing automation, enforcing least privilege, and aligning scripts with enterprise security baselines and compliance frameworks.
+description: '''Security-focused PowerShell specialist skilled in hardening Windows'
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.15
-max_turns: 25
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.15'
+max_turns: '25'
 agy:
   version: 1.0.0
   category: windows
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

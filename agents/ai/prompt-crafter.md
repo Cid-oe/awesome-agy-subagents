@@ -1,6 +1,6 @@
 ---
 name: prompt-crafter
-description: Batch prompt writing agent. Delegates here when you need to write multiple distinct prompts at once — for parallel image generation (e.g., "5 logo concepts"), serial-to-parallel workflows (e.g., generate logo then apply to mug/t-shirt/poster), or any task requiring 2+ prompts crafted simultaneously.
+description: '>-'
 kind: local
 model: haiku
 agy:
@@ -10,15 +10,21 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/meigen-ai-design/agents/prompt-crafter.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/mcp-servers-creative/agents/prompt-crafter.md
     format: markdown-frontmatter
 ---
 

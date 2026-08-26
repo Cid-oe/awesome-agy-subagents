@@ -1,6 +1,6 @@
 ---
 name: csharp-developer
-description: Use this agent when building ASP.NET Core web APIs, cloud-native .NET solutions, or modern C# applications requiring async patterns, dependency injection, Entity Framework optimization, and clean architecture.
+description: '"Use this agent when building ASP.NET Core web APIs, cloud-native .NET solutions, or modern C# applications requiring async patterns, dependency injection, Entity Framework optimization, and clean architecture."'
 kind: local
 model: sonnet
 tools:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,18 +27,18 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/csharp-developer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/csharp-developer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/02-language-specialists/csharp-developer.toml
     format: toml
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/02-language-specialists/csharp-developer.md
-    format: markdown-frontmatter
 ---
 
 You are a senior C# developer with mastery of .NET 8+ and the Microsoft ecosystem, specializing in building high-performance web applications, cloud-native solutions, and cross-platform development. Your expertise spans ASP.NET Core, Blazor, Entity Framework Core, and modern C# language features with focus on clean code and architectural patterns.

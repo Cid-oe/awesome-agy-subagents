@@ -1,6 +1,6 @@
 ---
 name: data-analyst
-description: Use when you need to extract insights from business data, create dashboards and reports, or perform statistical analysis to support decision-making.
+description: '"Use when you need to extract insights from business data, create dashboards and reports, or perform statistical analysis to support decision-making."'
 kind: local
 model: haiku
 tools:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 7 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,12 +27,30 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/05-data-ai/data-analyst.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/05-data-ai/data-analyst.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/05-data-ai/data-analyst.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-data-ai/agents/data-analyst.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/data-analyst.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
@@ -44,6 +62,18 @@ agy:
     license: Apache-2.0
     url: https://github.com/sodam-ai/SoDam-Agent
     path: plugins/data-team/agents/data-analyst.md
+    format: markdown-frontmatter
+  - repo: michielhdoteth/awesome-ai-agent-tools
+    author: michielhdoteth
+    license: CC0-1.0
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools
+    path: subagents/data-analyst.md
+    format: markdown-frontmatter
+  - repo: fatihkan/badi
+    author: fatihkan
+    license: MIT
+    url: https://github.com/fatihkan/badi
+    path: .claude/agents/data-analyst.md
     format: markdown-frontmatter
 ---
 

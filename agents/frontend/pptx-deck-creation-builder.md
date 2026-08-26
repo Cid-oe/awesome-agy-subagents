@@ -1,6 +1,6 @@
 ---
 name: pptx-deck-creation-builder
-description: Use when creating, repairing, or auditing a production-ready editable PowerPoint (PPTX) deck from a brief, source material, or reference deck.
+description: '"Use when creating, repairing, or auditing a production-ready editable PowerPoint (PPTX) deck from a brief, source material, or reference deck."'
 kind: local
 model: inherit
 agy:
@@ -12,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson

@@ -1,24 +1,20 @@
 ---
 name: ai-engineer-frontend
-description: Expert AI engineer specializing in AI system design, model implementation, and production deployment. Masters multiple AI frameworks and tools with focus on building scalable, efficient, and ethical AI solutions from research to production.
+description: Expert AI engineer specializing in AI system design, model implementation,
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.25
-max_turns: 25
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.25'
+max_turns: '25'
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

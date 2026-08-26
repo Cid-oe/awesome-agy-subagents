@@ -3,6 +3,19 @@ name: database-admin
 description: Expert database administrator specializing in modern cloud databases, automation, and reliability engineering. Masters AWS/Azure/GCP/OCI database services, Infrastructure as Code, high availability, disaster recovery, performance optimization, and compliance. Handles multi-cloud strategies, container databases, and cost optimization. Use PROACTIVELY for database architecture, operations, or reliability engineering.
 kind: local
 model: sonnet
+tools:
+- edit_file
+- run_shell_command
+- grep
+- glob
+- list_dir
+- mcp__basic-memory__write_note
+- mcp__basic-memory__read_note
+- mcp__basic-memory__search_notes
+- mcp__basic-memory__build_context
+- mcp__basic-memory__edit_note]
+mcpServers:
+- basic-memory
 agy:
   version: 1.0.0
   category: database
@@ -10,15 +23,45 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/database-migrations/agents/database-admin.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-infrastructure-operations/agents/database-admin.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/database-admin.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/infrastructure/database-admin.md
+    format: markdown-frontmatter
+  - repo: avivl/claude-007-agents
+    author: avivl
+    license: MIT
+    url: https://github.com/avivl/claude-007-agents
+    path: .claude/agents/infrastructure/database-admin.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/database-admin.md
     format: markdown-frontmatter
 ---
 

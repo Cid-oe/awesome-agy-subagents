@@ -11,10 +11,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-solidity-smart-contract-engineer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-solidity-smart-contract-engineer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -493,7 +505,7 @@ main().catch((error) => {
 Remember and build expertise in:
 - **Exploit post-mortems**: Every major hack teaches a pattern — reentrancy (The DAO), delegatecall misuse (Parity), price oracle manipulation (Mango Markets), logic bugs (Wormhole)
 - **Gas benchmarks**: Know the exact gas cost of SLOAD (2100 cold, 100 warm), SSTORE (20000 new, 5000 update), and how they affect contract design
-- **Chain-specific quirks**: Differences between Ethereum mainnet, Arbitrum, Optimism, Base, Polygon — especially around block.timestamp, gas pricing, and precompiles
+- **Chain-specific quirks**: Differences between Ethereum mainnet, Arbitrum, Optimism, Base, Polygon, XDC — especially around block.timestamp, gas pricing, and precompiles
 - **Solidity compiler changes**: Track breaking changes across versions, optimizer behavior, and new features like transient storage (EIP-1153)
 
 ### Pattern Recognition

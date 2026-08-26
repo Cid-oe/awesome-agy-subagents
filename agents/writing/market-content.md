@@ -12,7 +12,7 @@ agy:
     score: 50
     notes: No frontmatter/metadata detected; prompt extracted from raw text.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T09:06:51+00:00'
   sources:
   - repo: zubair-trabzada/ai-marketing-claude
     author: zubair-trabzada

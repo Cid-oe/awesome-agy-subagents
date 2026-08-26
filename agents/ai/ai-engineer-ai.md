@@ -16,6 +16,7 @@ tools:
 - mcp__context7__resolve-library-id
 - mcp__context7__get-library-docs
 - mcp__sequential-thinking__sequentialthinking
+- todo
 mcpServers:
 - context7
 - sequential-thinking
@@ -26,9 +27,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 9 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
@@ -42,17 +43,59 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/05-data-ai/ai-engineer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/05-data-ai/ai-engineer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/05-data-ai/ai-engineer.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-data-ai/agents/ai-engineer.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/ai-engineer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/data-ai/ai-engineer.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/data-ai/ai-engineer.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/ai-engineer/agents/ai-engineer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/ai-engineer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/data-ai/ai-engineer.md
     format: markdown-frontmatter
 ---
 

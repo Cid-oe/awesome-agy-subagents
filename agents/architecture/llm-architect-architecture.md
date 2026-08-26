@@ -1,30 +1,32 @@
 ---
 name: llm-architect-architecture
-description: Expert LLM architect specializing in large language model architecture, deployment, and optimization. Masters LLM system design, fine-tuning strategies, and production serving with focus on building scalable, efficient, and safe LLM applications.
+description: Expert LLM architect specializing in large language model architecture,
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.25
-max_turns: 25
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.25'
+max_turns: '25'
 agy:
   version: 1.0.0
   category: architecture
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/05-data-ai/llm-architect.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/data-ai/llm-architect.md
     format: markdown-frontmatter
 ---
 

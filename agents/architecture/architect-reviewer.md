@@ -26,9 +26,9 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: sequential-thinking, context7. Merged 4 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: sequential-thinking, context7. Merged 6 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:27+00:00'
   sources:
   - repo: lst97/claude-code-sub-agents
     author: lst97
@@ -42,6 +42,12 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/04-quality-security/architect-reviewer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/04-quality-security/architect-reviewer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
@@ -53,6 +59,18 @@ agy:
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/04-quality-security/architect-reviewer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/architect-review.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/quality-testing/architect-review.md
     format: markdown-frontmatter
 ---
 

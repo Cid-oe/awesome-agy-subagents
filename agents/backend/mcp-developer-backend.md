@@ -1,24 +1,20 @@
 ---
 name: mcp-developer-backend
-description: Expert MCP developer specializing in Model Context Protocol server and client development. Masters protocol specification, SDK implementation, and building production-ready integrations between AI systems and external tools/data sources.
+description: Expert MCP developer specializing in Model Context Protocol server and
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.1'
+max_turns: '20'
 agy:
   version: 1.0.0
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

@@ -3,14 +3,6 @@ name: lateral-movement
 description: Delegates to this agent when the user wants post-foothold lateral-movement strategy on an authorized engagement — pass-the-hash/ticket, remote execution (PsExec/WMI/WinRM/DCOM/SSH), token manipulation, RDP, and pivot planning across a compromised network. Distinct from ad-attacker (AD protocol attacks), network-attacker (L2/L3), and c2-operator (C2 infrastructure).
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: infrastructure
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

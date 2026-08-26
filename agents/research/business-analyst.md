@@ -11,6 +11,15 @@ tools:
 - grep
 - web_fetch
 - web_search
+- run_shell_command
+- list_dir
+- mcp__basic-memory__write_note
+- mcp__basic-memory__read_note
+- mcp__basic-memory__search_notes
+- mcp__basic-memory__build_context
+- mcp__basic-memory__edit_note]
+mcpServers:
+- basic-memory
 agy:
   version: 1.0.0
   category: research
@@ -18,9 +27,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 8 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
@@ -34,17 +43,53 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/08-business-product/business-analyst.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/08-business-product/business-analyst.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/08-business-product/business-analyst.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-business-finance/agents/business-analyst.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/business-analyst.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/business-product/business-analyst.md
+    format: markdown-frontmatter
+  - repo: avivl/claude-007-agents
+    author: avivl
+    license: MIT
+    url: https://github.com/avivl/claude-007-agents
+    path: .claude/agents/business/business-analyst.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/08-business-product/business-analyst.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/business-analyst.md
     format: markdown-frontmatter
 ---
 

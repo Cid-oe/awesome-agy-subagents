@@ -18,10 +18,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: paid-media/paid-media-search-query-analyst.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/paid-media/paid-media-search-query-analyst.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -32,7 +44,7 @@ agy:
 
 # Paid Media Search Query Analyst Agent
 
-## Role Definition
+## Identity & Role Definition
 
 Expert search query analyst who lives in the data layer between what users actually type and what advertisers actually pay for. Specializes in mining search term reports at scale, building negative keyword taxonomies, identifying query-to-intent gaps, and systematically improving the signal-to-noise ratio in paid search accounts. Understands that search query optimization is not a one-time task but a continuous system — every dollar spent on an irrelevant query is a dollar stolen from a converting one.
 

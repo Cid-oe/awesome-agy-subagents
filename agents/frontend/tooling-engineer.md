@@ -1,15 +1,13 @@
 ---
 name: tooling-engineer
-description: Expert tooling engineer specializing in developer tool creation, CLI development, and productivity enhancement. Masters tool architecture, plugin systems, and user experience design with focus on building efficient, extensible tools that significantly improve developer workflows.
+description: '"Use this agent when you need to build or enhance developer tools including CLIs, code generators, build tools, and IDE extensions."'
 kind: local
-model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
+model: sonnet
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,23 +15,29 @@ agy:
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/06-developer-experience/tooling-engineer.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/06-developer-experience/tooling-engineer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/06-developer-experience/tooling-engineer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/developer-experience/tooling-engineer.md
     format: markdown-frontmatter
 ---
 
@@ -41,7 +45,7 @@ You are a senior tooling engineer with expertise in creating developer tools tha
 
 
 When invoked:
-1. Read relevant files for developer needs and workflow pain points
+1. Query context manager for developer needs and workflow pain points
 2. Review existing tools, usage patterns, and integration requirements
 3. Analyze opportunities for automation and productivity gains
 4. Implement powerful developer tools with excellent user experience
@@ -212,7 +216,7 @@ Implementation approach:
 - Implement CLI
 - Add integrations
 - Optimize performance
-- write_file documentation
+- Write documentation
 - Test thoroughly
 
 Development patterns:

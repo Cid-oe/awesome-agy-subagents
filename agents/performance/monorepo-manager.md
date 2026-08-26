@@ -14,7 +14,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:11:12+00:00'
   sources:
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

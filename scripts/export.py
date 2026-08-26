@@ -175,8 +175,54 @@ def load(path: Path, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
+# Additional MCP servers that have appeared in the imported corpus over time.
+# (name, category, description, transport)
+_DYNAMIC_MCP = [
+    ("context7", "knowledge", "Up-to-date library documentation lookup.", "Streamable HTTP"),
+    ("sequential-thinking", "reasoning", "Structured multi-step reasoning.", "stdio"),
+    ("meigen", "ai", "AI inspiration and gallery search for creative agents.", "Streamable HTTP"),
+    ("magic", "ai", "21st.dev Magic component builder/refiner for UI agents.", "Streamable HTTP"),
+    ("bgpt", "ai", "B-GPT paper search and retrieval.", "Streamable HTTP"),
+    ("prompt-to-asset", "ai", "Convert a natural-language prompt into a generated asset.", "Streamable HTTP"),
+    ("openaiDeveloperDocs", "ai", "OpenAI developer documentation lookup.", "Streamable HTTP"),
+    ("chrome_devtools", "browser", "Chrome DevTools Protocol debugging and inspection.", "stdio"),
+    ("playwright", "browser", "Cross-browser automation and testing.", "stdio"),
+]
+
+
+def _norm(tool: dict) -> dict:
+    """Ensure every tool dict carries the fields the renderer expects."""
+    tool.setdefault("example", f"{tool['name'].replace('-', '_')}(...)")
+    tool.setdefault("platforms",
+                    ["All"] if tool.get("transport") == "Streamable HTTP"
+                    else ["Linux", "macOS", "Windows"])
+    return tool
+
+
+def _all_mcp(agents: list) -> list[dict]:
+    """Merge the curated catalog with any MCP servers found in the corpus."""
+    seen = {t["name"] for t in MCP_TOOLS}
+    merged = list(MCP_TOOLS)
+    for n, c, d, tr in _DYNAMIC_MCP:
+        if n not in seen:
+            merged.append(_norm({"name": n, "category": c, "description": d,
+                                 "transport": tr}))
+            seen.add(n)
+    # Any MCP server referenced by agents but still missing from the catalog.
+    used = sorted({m for a in agents for m in a.get("mcp_servers", [])})
+    for m in used:
+        base = m.split("__")[0]
+        if base and base not in seen:
+            merged.append(_norm({"name": base, "category": "mcp",
+                                 "description": f"Custom MCP server referenced by imported agents: {m}",
+                                 "transport": "stdio"}))
+            seen.add(base)
+    return merged
+
+
 def main() -> None:
     agents = load(META_DIR / "agents.json", [])
+    MCP_TOOLS[:] = _all_mcp(agents)
 
     # Build tool -> related agents index.
     tool_agents: dict[str, list[str]] = {}

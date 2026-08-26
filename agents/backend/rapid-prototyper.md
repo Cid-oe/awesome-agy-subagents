@@ -3,6 +3,22 @@ name: rapid-prototyper
 description: Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks
 kind: local
 model: inherit
+tools:
+- write_file
+- edit_file
+- run_shell_command
+- read_file
+- glob
+- grep
+- list_dir
+- web_search
+- mcp__basic-memory__write_note
+- mcp__basic-memory__read_note
+- mcp__basic-memory__search_notes
+- mcp__basic-memory__build_context
+- mcp__basic-memory__edit_note]
+mcpServers:
+- basic-memory
 agy:
   version: 1.0.0
   category: backend
@@ -11,15 +27,39 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-rapid-prototyper.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-rapid-prototyper.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: engineering/engineering-rapid-prototyper.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/rapid-prototyper/agents/rapid-prototyper.md
+    format: markdown-frontmatter
+  - repo: avivl/claude-007-agents
+    author: avivl
+    license: MIT
+    url: https://github.com/avivl/claude-007-agents
+    path: .claude/agents/product/rapid-prototyper.md
     format: markdown-frontmatter
 ---
 

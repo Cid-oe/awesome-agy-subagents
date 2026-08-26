@@ -1,24 +1,20 @@
 ---
 name: visual-asset-generator-backend
-description: Expert visual asset generator specializing in production-ready digital assets for software projects. Masters app icons, favicons, OG images, logos, and wordmarks by routing prompts to the prompt-to-asset MCP server across 30+ image generation models. Zero API key required for first run via free tiers.
+description: Expert visual asset generator specializing in production-ready digital
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.4
-max_turns: 15
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.4'
+max_turns: '15'
 agy:
   version: 1.0.0
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

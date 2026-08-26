@@ -1,6 +1,6 @@
 ---
 name: rails-expert
-description: 'Use when building or modernizing Rails applications requiring API development, Hotwire reactivity, real-time features, background job processing, deployment automation, or Rails-idiomatic patterns for maximum productivity. Version-aware: adapts to Rails 7.x and 8.x projects.'
+description: '"Use when building or modernizing Rails applications requiring API development, Hotwire reactivity, real-time features, background job processing, deployment automation, or Rails-idiomatic patterns for maximum productivity. Version-aware: adapts to Rails 7.x and 8.x projects."'
 kind: local
 model: sonnet
 tools:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,35 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/rails-expert.md
     format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-language-specialists/agents/rails-expert.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/rails-expert.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/language-experts/rails-expert.md
+    format: markdown-frontmatter
   - repo: 0xfurai/claude-code-subagents
     author: 0xfurai
     license: MIT
     url: https://github.com/0xfurai/claude-code-subagents
     path: agents/rails-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/rails-expert.md
     format: markdown-frontmatter
 ---
 

@@ -18,9 +18,11 @@ playwright(...)
 Linux, macOS, Windows
 
 ## Referenced by imported agents
-Used by **6** agent(s) in this corpus.
+Used by **8** agent(s) in this corpus.
 
+- design-review
 - frontend-developer
+- ui-designer
 - ux-designer
 - performance-engineer
 - security-auditor

@@ -4,21 +4,19 @@ description: Answer Engine Optimization (AEO) specialist agent. Use when content
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - run_shell_command
 - web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: ai
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, WebSearch].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

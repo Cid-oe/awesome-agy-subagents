@@ -3,14 +3,6 @@ name: compliance-mapper
 description: Delegates to this agent when the user wants to map penetration-test findings to compliance frameworks — PCI DSS, NIST 800-53 / CSF, ISO 27001, CIS Controls, HIPAA, SOC 2 — produce control-gap analysis, and translate technical findings into compliance impact. Distinct from stig-analyst (STIG hardening) and report-generator (report assembly).
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: research
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

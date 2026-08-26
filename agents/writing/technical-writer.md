@@ -7,27 +7,48 @@ tools:
 - read_file
 - write_file
 - edit_file
+- run_shell_command
 - glob
 - grep
 - web_fetch
 - web_search
+- list_dir
 agy:
   version: 1.0.0
   category: writing
   tags:
   - Technical Writer
+  - technical_writer
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 8 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-technical-writer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-technical-writer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: engineering/engineering-technical-writer.md
+    format: markdown-frontmatter
+  - repo: rtk-ai/rtk
+    author: rtk-ai
+    license: Apache-2.0
+    url: https://github.com/rtk-ai/rtk
+    path: .claude/agents/technical-writer.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -35,12 +56,60 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/08-business-product/technical-writer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/08-business-product/technical-writer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/08-business-product/technical-writer.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/business-product/technical-writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: agents/technical_writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/agents/technical-writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: qwen/agents/technical_writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/src/agents/technical-writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: plugins/maestro/src/agents/technical-writer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: src/agents/technical-writer.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

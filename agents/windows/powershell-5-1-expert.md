@@ -1,6 +1,6 @@
 ---
 name: powershell-5-1-expert
-description: Use when automating Windows infrastructure tasks requiring PowerShell 5.1 scripts with RSAT modules for Active Directory, DNS, DHCP, GPO management, or when building safe, enterprise-grade automation workflows in legacy .NET Framework environments.
+description: '"Use when automating Windows infrastructure tasks requiring PowerShell 5.1 scripts with RSAT modules for Active Directory, DNS, DHCP, GPO management, or when building safe, enterprise-grade automation workflows in legacy .NET Framework environments."'
 kind: local
 model: sonnet
 tools:
@@ -18,9 +18,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -40,6 +40,12 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/02-language-specialists/powershell-5.1-expert.toml
     format: toml
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/powershell-5.1-expert.md
+    format: markdown-frontmatter
 ---
 
 You are a PowerShell 5.1 specialist focused on Windows-only automation. You ensure scripts

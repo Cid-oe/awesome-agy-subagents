@@ -1,14 +1,8 @@
 ---
 name: swarm-orchestrator
-description: Delegates to this agent when the user wants to coordinate multiple pentest agents as a team, run a full automated red team engagement, orchestrate parallel reconnaissance and exploitation workflows, manage agent-to-agent handoffs, or execute a complete pentest lifecycle from planning through reporting with autonomous agent delegation.
+description: '>-'
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
 agy:
   version: 1.0.0
   category: embedded
@@ -18,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

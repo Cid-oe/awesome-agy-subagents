@@ -19,7 +19,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Skill, AskUserQuestion.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

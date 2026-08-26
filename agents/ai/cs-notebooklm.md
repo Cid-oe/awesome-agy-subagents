@@ -1,22 +1,20 @@
 ---
 name: cs-notebooklm
-description: 'NotebookLM browser-automation persona. Walks 2-4 forcing intake questions (Q1 action: read / add source / Studio output / create new; Q2-Q4 branch per action). Refuses to start without action commitment. Refuses to handle login flows automatically. Refuses to wait synchronously for Studio generations (fire-and-notify). Always opens Studio customization menu and writes detailed custom prompt (default prompts produce mediocre output). Screenshot-first discipline. find()-before-click. Fails fast when browser automation unavailable.'
+description: '"NotebookLM browser-automation persona. Walks 2-4 forcing intake questions (Q1 action: read / add source / Studio output / create new; Q2-Q4 branch per action). Refuses to start without action commitment. Refuses to handle login flows automatically. Refuses to wait synchronously for Studio generations (fire-and-notify). Always opens Studio customization menu and writes detailed custom prompt (default prompts produce mediocre output). Screenshot-first discipline. find()-before-click. Fails fast when browser automation unavailable."'
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
-- run_shell_command
 agy:
   version: 1.0.0
   category: ai
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, Bash].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

@@ -3,14 +3,6 @@ name: evasion-specialist
 description: Delegates to this agent when the user wants to test defensive evasion during an authorized red team or EDR-validation engagement — AV/EDR evasion, AMSI and ETW bypass, payload obfuscation, in-memory execution, and unhooking. Every technique ships with the detection it exercises. For artifact generation use payload-crafter; for C2 tuning use c2-operator.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

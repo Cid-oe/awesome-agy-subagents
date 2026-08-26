@@ -1,13 +1,8 @@
 ---
 name: migration-planner
-description: Analyzes Cypress or Selenium test suites and creates a file-by-file migration plan. Invoked by /pw:migrate before conversion starts.
+description: '>-'
 kind: local
 model: inherit
-tools:
-- read_file
-- grep
-- glob
-- list_dir
 agy:
   version: 1.0.0
   category: database
@@ -17,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

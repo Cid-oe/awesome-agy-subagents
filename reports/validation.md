@@ -1,5 +1,5 @@
 # AGY Validation Report
 
-- Total agents validated: **1186**
-- Valid: **1186**
+- Total agents validated: **4250**
+- Valid: **4250**
 - Invalid: **0**

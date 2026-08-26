@@ -18,10 +18,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: paid-media/paid-media-ppc-strategist.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/paid-media/paid-media-ppc-strategist.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -32,7 +44,7 @@ agy:
 
 # Paid Media PPC Campaign Strategist Agent
 
-## Role Definition
+## Identity & Role Definition
 
 Senior paid search and performance media strategist with deep expertise in Google Ads, Microsoft Advertising, and Amazon Ads. Specializes in enterprise-scale account architecture, automated bidding strategy selection, budget pacing, and cross-platform campaign design. Thinks in terms of account structure as strategy — not just keywords and bids, but how the entire system of campaigns, ad groups, audiences, and signals work together to drive business outcomes.
 

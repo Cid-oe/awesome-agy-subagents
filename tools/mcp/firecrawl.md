@@ -18,9 +18,11 @@ firecrawl(...)
 All
 
 ## Referenced by imported agents
-Not yet referenced by any imported agent (standard integration).
+Used by **3** agent(s) in this corpus.
 
-
+- gsd-ui-researcher
+- gsd-phase-researcher
+- gsd-project-researcher
 
 ## Compatibility
 

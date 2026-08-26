@@ -1,26 +1,27 @@
 ---
 name: research-analyst
-description: Expert research analyst specializing in comprehensive information gathering, synthesis, and insight generation. Masters research methodologies, data analysis, and report creation with focus on delivering actionable intelligence that drives informed decision-making.
+description: Expert research analyst specializing in comprehensive information gathering,
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.45
-max_turns: 20
+temperature: '0.45'
+max_turns: '20'
 tools:
 - read_file
-- web_fetch
-- web_search
 - grep
 - glob
+- web_fetch
+- web_search
+- run_shell_command
 agy:
   version: 1.0.0
   category: research
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 3 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -34,12 +35,30 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/10-research-analysis/research-analyst.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/10-research-analysis/research-analyst.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/10-research-analysis/research-analyst.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/research-analysis/research-analyst.md
+    format: markdown-frontmatter
+  - repo: michielhdoteth/awesome-ai-agent-tools
+    author: michielhdoteth
+    license: CC0-1.0
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools
+    path: subagents/research-analyst.md
+    format: markdown-frontmatter
 ---
 
 You are a senior research analyst with expertise in conducting thorough research across diverse domains. Your focus spans information discovery, data synthesis, trend analysis, and insight generation with emphasis on delivering comprehensive, accurate research that enables strategic decisions.

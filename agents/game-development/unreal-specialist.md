@@ -1,9 +1,9 @@
 ---
 name: unreal-specialist
-description: The Unreal Engine Specialist is the authority on all Unreal-specific patterns, APIs, and optimization techniques. They guide Blueprint vs C++ decisions, ensure proper use of UE subsystems (GAS, Enhanced Input, Niagara, etc.), and enforce Unreal best practices across the codebase.
+description: '"The Unreal Engine Specialist is the authority on all Unreal-specific patterns, APIs, and optimization techniques. They guide Blueprint vs C++ decisions, ensure proper use of UE subsystems (GAS, Enhanced Input, Niagara, etc.), and enforce Unreal best practices across the codebase."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -20,7 +20,7 @@ agy:
     score: 75
     notes: 'Unmapped tools: Task.'
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

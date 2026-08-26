@@ -3,12 +3,6 @@ name: threat-modeler
 description: Delegates to this agent when the user asks about threat modeling, attack surface analysis, STRIDE, DREAD, attack trees, data flow diagrams, trust boundaries, or security architecture review
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
 agy:
   version: 1.0.0
   category: security
@@ -16,15 +10,21 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph
     license: MIT
     url: https://github.com/0xSteph/pentest-ai-agents
     path: agents/threat-modeler.md
+    format: markdown-frontmatter
+  - repo: jeremylongshore/claude-code-plugins-plus-skills
+    author: jeremylongshore
+    license: MIT
+    url: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
+    path: plugins/packages/security-pro-pack/plugins/04-infrastructure-security/agents/threat-modeler.md
     format: markdown-frontmatter
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

@@ -5,10 +5,10 @@ kind: local
 model: inherit
 tools:
 - read_file
-- glob
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
+- glob
 - grep
 - list_dir
 - web_search
@@ -32,27 +32,39 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 13 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-frontend-developer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-frontend-developer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: engineering/engineering-frontend-developer.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/core-development/frontend-developer.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/01-core-development/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/01-core-development/frontend-developer.md
     format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -66,11 +78,83 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/01-core-development/frontend-developer.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-development-architecture/agents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: composio-community/awesome-claude-plugins
+    author: composio-community
+    license: ''
+    url: https://github.com/composio-community/awesome-claude-plugins
+    path: frontend-developer/agents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/frontend-developer/agents/frontend-developer.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/development/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/core-development/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/awesome-claude-agents/agents/universal/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: michielhdoteth/awesome-ai-agent-tools
+    author: michielhdoteth
+    license: CC0-1.0
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools
+    path: subagents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: nuttaruj/rolepod
+    author: nuttaruj
+    license: MIT
+    url: https://github.com/nuttaruj/rolepod
+    path: core/agents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: nuttaruj/rolepod
+    author: nuttaruj
+    license: MIT
+    url: https://github.com/nuttaruj/rolepod
+    path: plugins/rolepod-cursor/agents/frontend-developer.md
+    format: markdown-frontmatter
+  - repo: nuttaruj/rolepod
+    author: nuttaruj
+    license: MIT
+    url: https://github.com/nuttaruj/rolepod
+    path: plugins/rolepod/agents/frontend-developer.md
     format: markdown-frontmatter
 ---
 

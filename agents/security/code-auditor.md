@@ -3,12 +3,6 @@ name: code-auditor
 description: Delegates to this agent when the user wants a secure-code review of application source — static analysis for injection, auth, secrets, deserialization, and OWASP issues; SAST tooling guidance (Semgrep, CodeQL); or triage of scanner output. Reviews source at rest; it does not test running systems (use web-hunter/api-security) or pipeline security (use cicd-redteam).
 kind: local
 model: sonnet
-tools:
-- read_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -18,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

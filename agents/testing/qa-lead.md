@@ -1,9 +1,9 @@
 ---
 name: qa-lead
-description: The QA Lead owns test strategy, bug triage, release quality gates, and testing process design. Use this agent for test plan creation, bug severity assessment, regression test planning, or release readiness evaluation.
+description: '"The QA Lead owns test strategy, bug triage, release quality gates, and testing process design. Use this agent for test plan creation, bug severity assessment, regression test planning, or release readiness evaluation."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -18,14 +18,20 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos
     license: MIT
     url: https://github.com/Donchitos/Claude-Code-Game-Studios
+    path: .claude/agents/qa-lead.md
+    format: markdown-frontmatter
+  - repo: fatihkan/badi
+    author: fatihkan
+    license: MIT
+    url: https://github.com/fatihkan/badi
     path: .claude/agents/qa-lead.md
     format: markdown-frontmatter
 ---

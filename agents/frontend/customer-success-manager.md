@@ -3,11 +3,6 @@ name: customer-success-manager
 description: Strategic customer success specialist for onboarding, health scoring, QBR facilitation, churn prevention, expansion identification, and renewal management — driving net revenue retention by turning customers into long-term partners who achieve measurable outcomes
 kind: local
 model: inherit
-tools:
-- read_file
-- write_file
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: frontend
@@ -18,8 +13,14 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: specialized/customer-success-manager.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT

@@ -28,9 +28,9 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: context7, magic. Merged 2 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: context7, magic. Merged 3 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:27+00:00'
   sources:
   - repo: lst97/claude-code-sub-agents
     author: lst97
@@ -43,6 +43,12 @@ agy:
     license: NOASSERTION
     url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
     path: agents/language-specialists/react-pro.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/react-pro.md
     format: markdown-frontmatter
 ---
 

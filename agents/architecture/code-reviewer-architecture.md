@@ -1,10 +1,9 @@
 ---
 name: code-reviewer-architecture
-description: Proactively review code changes for Clean Architecture, SOLID, size limits
+description: '"Proactively review code changes for Clean Architecture, SOLID, size limits"'
 kind: local
 model: sonnet
 tools:
-- read_file
 - run_shell_command
 - glob
 - grep
@@ -19,7 +18,7 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -30,15 +29,27 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 3 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
     license: MIT
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/code-reviewer.md
+    format: markdown-frontmatter
+  - repo: addyosmani/agent-skills
+    author: addyosmani
+    license: MIT
+    url: https://github.com/addyosmani/agent-skills
+    path: agents/code-reviewer.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/cc-best/agents/code-reviewer.md
     format: markdown-frontmatter
 ---
 

@@ -1,12 +1,11 @@
 ---
 name: memory-writer
-description: Budgeted reflection scribe — merges a parent agent's distilled session summary into its checkpoint file and stores durable facts via cortex:remember. Spawned by the context-guard WARN reflection; never invents content.
+description: '"Budgeted reflection scribe — merges a parent agent''s distilled session summary into its checkpoint file and stores durable facts via cortex:remember. Spawned by the context-guard WARN reflection; never invents content."'
 kind: local
 model: haiku
 tools:
-- read_file
 - run_shell_command
-- mcp__plugin_hypermnesia-mcp_cortex__remember
+- mcp__plugin_hypermnesia-mcp_cortex__remember]
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 agy:
@@ -18,7 +17,7 @@ agy:
     score: 85
     notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust

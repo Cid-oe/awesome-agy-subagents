@@ -27,15 +27,27 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: context7, sequential-thinking. Merged 3 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: context7, sequential-thinking. Merged 6 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:27+00:00'
   sources:
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/data-ai/database-optimizer.md
+    format: markdown-frontmatter
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-database-optimizer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-database-optimizer.md
     format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
@@ -49,6 +61,30 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/05-data-ai/database-optimizer.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-infrastructure-operations/agents/database-optimizer.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/database-optimizer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/database-optimizer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/data-ai/database-optimizer.md
+    format: markdown-frontmatter
 ---
 
 # Database Optimizer

@@ -18,8 +18,14 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: security/security-penetration-tester.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -31,6 +37,12 @@ agy:
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/04-quality-security/penetration-tester.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/04-quality-security/penetration-tester.md
     format: markdown-frontmatter
 ---
 

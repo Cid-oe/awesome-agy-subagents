@@ -3,14 +3,6 @@ name: opsec-anonymizer
 description: Delegates to this agent when the user asks about operator-side identity hygiene, source IP separation, traffic anonymization for authorized red team work, Tor and proxy chains, burner infrastructure provisioning, attribution avoidance, or pre-engagement opsec posture before tools are run against scope.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: infrastructure
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

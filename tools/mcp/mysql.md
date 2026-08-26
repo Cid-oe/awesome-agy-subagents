@@ -18,9 +18,11 @@ mysql(...)
 Linux, macOS, Windows
 
 ## Referenced by imported agents
-Not yet referenced by any imported agent (standard integration).
+Used by **3** agent(s) in this corpus.
 
-
+- claudehut-db-reviewer
+- claudehut-perf-reviewer
+- claudehut-security-auditor
 
 ## Compatibility
 

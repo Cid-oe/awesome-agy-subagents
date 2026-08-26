@@ -3,22 +3,31 @@ name: accessibility-auditor
 description: Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers — if it's not tested with a screen reader, it's not accessible.
 kind: local
 model: inherit
-tools:
-- read_file
-- glob
-- write_file
 agy:
   version: 1.0.0
   category: accessibility
   tags:
   - Accessibility Auditor
+  - '"accessibility-auditor"'
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: testing/testing-accessibility-auditor.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/testing/testing-accessibility-auditor.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -30,6 +39,12 @@ agy:
     license: NOASSERTION
     url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
     path: agents/specialized-domains/accessibility-auditor.md
+    format: markdown-frontmatter
+  - repo: frankxai/agentic-creator-os
+    author: frankxai
+    license: ''
+    url: https://github.com/frankxai/agentic-creator-os
+    path: .claude/agents/accessibility-auditor.md
     format: markdown-frontmatter
 ---
 

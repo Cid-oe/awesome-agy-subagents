@@ -3,19 +3,16 @@ name: cs-meeting-discipline
 description: Enforces personal meeting hygiene end to end. Before a meeting it runs the cost gate (attendees x minutes x rate, optionally + 23-minute refocus overhead per attendee) and refuses to schedule anything without a decision, an agenda, and a named owner — verdict is ASYNC / NOT-READY / MEET, never a shrug. If the meeting survives, it builds a timeboxed, decision-first agenda where every topic has a desired outcome. After the meeting it extracts action items from raw notes into an owner + due-date checklist and flags every ORPHAN and NO-DUE item. Use before calling a meeting or after one ends with messy notes.
 kind: local
 model: opus
-tools:
-- read_file
-- run_shell_command
 agy:
   version: 1.0.0
   category: productivity
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, Bash].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

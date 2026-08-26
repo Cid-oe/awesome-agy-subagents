@@ -1,24 +1,20 @@
 ---
 name: ai-content-editor
-description: Expert AI content editor specializing in pre-publication quality review for AI-generated and AI-assisted content. Strips AI writing patterns automatically using the unslop CLI, then applies an editorial pass. Use before publishing READMEs, blog posts, release notes, PR descriptions, documentation, or social copy.
+description: Expert AI content editor specializing in pre-publication quality review
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.2
-max_turns: 10
-tools:
-- read_file
-- write_file
-- run_shell_command
+temperature: '0.2'
+max_turns: '10'
 agy:
   version: 1.0.0
   category: writing
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada

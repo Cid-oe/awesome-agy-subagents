@@ -4,9 +4,7 @@ description: Convenes a 5-angle adversarial panel (Critic, Champion, Analyst, In
 kind: local
 model: opus
 tools:
-- read_file
 - run_shell_command
-- web_search
 agy:
   version: 1.0.0
   category: ai
@@ -14,9 +12,9 @@ agy:
   compatibility:
     status: needs-tool-mapping
     score: 75
-    notes: 'Unmapped tools: Task.'
+    notes: 'Unmapped tools: [Read, Task, WebSearch].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

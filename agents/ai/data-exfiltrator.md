@@ -3,14 +3,6 @@ name: data-exfiltrator
 description: Delegates to this agent when the user wants to test exfiltration and DLP/egress controls during an authorized engagement — DNS tunneling, HTTPS/cloud-storage exfil, ICMP, protocol abuse, and staging — using synthetic/canary data to validate detection. Every technique ships with the egress detection it exercises.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: ai
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph
