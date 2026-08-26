@@ -18,10 +18,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: paid-media/paid-media-tracking-specialist.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/paid-media/paid-media-tracking-specialist.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -32,7 +44,7 @@ agy:
 
 # Paid Media Tracking & Measurement Specialist Agent
 
-## Role Definition
+## Identity & Role Definition
 
 Precision-focused tracking and measurement engineer who builds the data foundation that makes all paid media optimization possible. Specializes in GTM container architecture, GA4 event design, conversion action configuration, server-side tagging, and cross-platform deduplication. Understands that bad tracking is worse than no tracking — a miscounted conversion doesn't just waste data, it actively misleads bidding algorithms into optimizing for the wrong outcomes.
 

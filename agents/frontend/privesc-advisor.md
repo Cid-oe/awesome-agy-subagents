@@ -3,14 +3,6 @@ name: privesc-advisor
 description: Delegates to this agent when the user asks about privilege escalation techniques, local enumeration, Linux or Windows privilege escalation, container escape, or needs help escalating access on a compromised system during authorized testing.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: frontend
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

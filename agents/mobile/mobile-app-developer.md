@@ -1,6 +1,6 @@
 ---
 name: mobile-app-developer
-description: Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform-specific user experience.
+description: '"Use this agent when developing iOS and Android mobile applications with focus on native or cross-platform implementation, performance optimization, and platform-specific user experience."'
 kind: local
 model: sonnet
 tools:
@@ -19,7 +19,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,11 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/07-specialized-domains/mobile-app-developer.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/core-development/mobile-app-developer.md
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/07-specialized-domains/mobile-app-developer.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -39,6 +39,12 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/07-specialized-domains/mobile-app-developer.toml
     format: toml
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/core-development/mobile-app-developer.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

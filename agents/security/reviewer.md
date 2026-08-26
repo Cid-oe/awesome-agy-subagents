@@ -6,6 +6,9 @@ model: anthropic/claude-opus-4-6
 tools:
 - read_file
 - run_shell_command
+- grep
+- glob
+- web_search
 agy:
   version: 1.0.0
   category: security
@@ -13,9 +16,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 8 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:08:24+00:00'
   sources:
   - repo: HazAT/pi-interactive-subagents
     author: HazAT
@@ -23,12 +26,54 @@ agy:
     url: https://github.com/HazAT/pi-interactive-subagents
     path: agents/reviewer.md
     format: markdown-frontmatter
+  - repo: can1357/oh-my-pi
+    author: can1357
+    license: MIT
+    url: https://github.com/can1357/oh-my-pi
+    path: packages/coding-agent/src/prompts/agents/reviewer.md
+    format: markdown-frontmatter
+  - repo: ruvnet/ruflo
+    author: ruvnet
+    license: MIT
+    url: https://github.com/ruvnet/ruflo
+    path: plugins/ruflo-core/agents/reviewer.md
+    format: markdown-frontmatter
+  - repo: affaan-m/ECC
+    author: affaan-m
+    license: MIT
+    url: https://github.com/affaan-m/ECC
+    path: .codex/agents/reviewer.toml
+    format: toml
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/04-quality-security/reviewer.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/magic-cc-codex-worker/agents/reviewer.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/magic-cc-codex-worker/agents/reviewer.md
+    format: markdown-frontmatter
+  - repo: hoangsonww/Claude-Code-Agent-Monitor
+    author: hoangsonww
+    license: MIT
+    url: https://github.com/hoangsonww/Claude-Code-Agent-Monitor
+    path: .codex/agents/reviewer.toml
+    format: toml
+  - repo: VKirill/claude-lane-stack
+    author: VKirill
+    license: MIT
+    url: https://github.com/VKirill/claude-lane-stack
+    path: agents/codex/instructions/reviewer.md
+    format: markdown-frontmatter
 ---
 
 # Reviewer Agent

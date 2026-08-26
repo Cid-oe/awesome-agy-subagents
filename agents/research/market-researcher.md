@@ -1,6 +1,6 @@
 ---
 name: market-researcher
-description: Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy and market entry decisions.
+description: '"Use this agent when you need to analyze markets, understand consumer behavior, assess competitive landscapes, and size opportunities to inform business strategy and market entry decisions."'
 kind: local
 model: sonnet
 tools:
@@ -9,6 +9,7 @@ tools:
 - glob
 - web_fetch
 - web_search
+- run_shell_command
 agy:
   version: 1.0.0
   category: research
@@ -16,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -26,18 +27,42 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/10-research-analysis/market-researcher.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/10-research-analysis/market-researcher.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/10-research-analysis/market-researcher.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/research-analysis/market-researcher.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/10-research-analysis/market-researcher.md
     format: markdown-frontmatter
+  - repo: fatihkan/badi
+    author: fatihkan
+    license: MIT
+    url: https://github.com/fatihkan/badi
+    path: .claude/agents/market-researcher.md
+    format: markdown-frontmatter
+  - repo: CodeDraig/codex-subagents
+    author: CodeDraig
+    license: ''
+    url: https://github.com/CodeDraig/codex-subagents
+    path: AGENTS/openai/market-researcher.toml
+    format: toml
 ---
 
 You are a senior market researcher with expertise in comprehensive market analysis and consumer behavior research. Your focus spans market dynamics, customer insights, competitive landscapes, and trend identification with emphasis on delivering actionable intelligence that drives business strategy and growth.

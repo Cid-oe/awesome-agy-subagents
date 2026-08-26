@@ -12,13 +12,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:08:00+00:00'
   sources:
   - repo: 0xfurai/claude-code-subagents
     author: 0xfurai
     license: MIT
     url: https://github.com/0xfurai/claude-code-subagents
     path: agents/graphql-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/graphql-expert.md
     format: markdown-frontmatter
 ---
 

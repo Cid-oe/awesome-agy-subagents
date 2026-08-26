@@ -1,6 +1,6 @@
 ---
 name: platform-engineer
-description: Use when building or improving internal developer platforms (IDPs), designing self-service infrastructure, or optimizing developer workflows to reduce friction and accelerate delivery. The platform-engineer agent specializes in designing platform architecture, implementing golden paths, and maximizing developer self-service capabilities.
+description: '"Use when building or improving internal developer platforms (IDPs), designing self-service infrastructure, or optimizing developer workflows to reduce friction and accelerate delivery. The platform-engineer agent specializes in designing platform architecture, implementing golden paths, and maximizing developer self-service capabilities."'
 kind: local
 model: inherit
 tools:
@@ -10,16 +10,18 @@ tools:
 - run_shell_command
 - glob
 - grep
+- list_dir
 agy:
   version: 1.0.0
   category: infrastructure
-  tags: []
+  tags:
+  - platform_engineer
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,12 +29,60 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/03-infrastructure/platform-engineer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/03-infrastructure/platform-engineer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/03-infrastructure/platform-engineer.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/infrastructure/platform-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: agents/platform_engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/agents/platform-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: qwen/agents/platform_engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/src/agents/platform-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: plugins/maestro/src/agents/platform-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: src/agents/platform-engineer.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

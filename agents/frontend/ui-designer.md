@@ -21,6 +21,7 @@ tools:
 mcpServers:
 - magic
 - context7
+- playwright
 agy:
   version: 1.0.0
   category: frontend
@@ -29,21 +30,45 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 9 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: design/design-ui-designer.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/design/design-ui-designer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: design/design-ui-designer.md
     format: markdown-frontmatter
+  - repo: wshobson/agents
+    author: wshobson
+    license: MIT
+    url: https://github.com/wshobson/agents
+    path: plugins/ui-design/agents/ui-designer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/01-core-development/ui-designer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/01-core-development/ui-designer.md
     format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -57,18 +82,36 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/01-core-development/ui-designer.toml
     format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/core-development/ui-designer.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/development/ui-designer.md
     format: markdown-frontmatter
-  - repo: wshobson/agents
-    author: wshobson
-    license: MIT
-    url: https://github.com/wshobson/agents
-    path: plugins/ui-design/agents/ui-designer.md
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/ui-designer/agents/ui-designer.md
     format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/ui-designer.md
+    format: markdown-frontmatter
+  - repo: justin-haffey/email-manager
+    author: justin-haffey
+    license: ''
+    url: https://github.com/justin-haffey/email-manager
+    path: .codex/agents/core/developers/ui-designer.toml
+    format: toml
 ---
 
 # UI Designer Agent Personality

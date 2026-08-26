@@ -1,6 +1,6 @@
 ---
 name: docker-expert
-description: Use this agent when you need to build, optimize, or secure Docker container images and orchestration for production environments.
+description: '"Use this agent when you need to build, optimize, or secure Docker container images and orchestration for production environments."'
 kind: local
 model: sonnet
 tools:
@@ -19,7 +19,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,23 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/03-infrastructure/docker-expert.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/03-infrastructure/docker-expert.md
+    format: markdown-frontmatter
   - repo: 0xfurai/claude-code-subagents
     author: 0xfurai
     license: MIT
     url: https://github.com/0xfurai/claude-code-subagents
     path: agents/docker-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/docker-expert.md
     format: markdown-frontmatter
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: game-developer
-description: Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games targeting specific platforms.
+description: '"Use this agent when implementing game systems, optimizing graphics rendering, building multiplayer networking, or developing gameplay mechanics for games targeting specific platforms."'
 kind: local
 model: sonnet
 tools:
@@ -17,9 +17,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,11 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/07-specialized-domains/game-developer.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/specialized-domains/game-developer.md
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/07-specialized-domains/game-developer.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -39,6 +39,30 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/07-specialized-domains/game-developer.toml
     format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-specialized-domains/agents/game-developer.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/game-developer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/specialized-domains/game-developer.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/specialized-domains/game-developer.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT

@@ -7,14 +7,33 @@ agy:
   version: 1.0.0
   category: architecture
   tags:
+  - automation_governance_architect
   - Automation Governance Architect
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:13:44+00:00'
   sources:
+  - repo: VKirill/codex-starter-kit
+    author: VKirill
+    license: MIT
+    url: https://github.com/VKirill/codex-starter-kit
+    path: agents/automation_governance_architect.toml
+    format: toml
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: specialized/automation-governance-architect.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/specialized/automation-governance-architect.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -231,3 +250,37 @@ Use the Automation Governance Architect to evaluate this process for automation.
 Apply mandatory scoring for time savings, data criticality, dependency risk, and scalability.
 Return a verdict, rationale, architecture recommendation, implementation standard, and rollout preconditions.
 ```
+
+## Codex Integration
+
+Use `/codex-adversarial` to pressure-test your design after automation governance proposal. Codex (GPT-5) in adversarial mode challenges assumptions, tradeoffs, and alternative approaches — exactly the angles a single architect can miss.
+
+Workflow:
+1. Complete your design proposal first.
+2. Invoke `/codex-adversarial` with focus text targeting the riskiest decisions (e.g. "challenge the chosen caching and retry design", "look for race conditions in the queue handoff").
+3. Integrate substantive challenges into the final design. Document tradeoffs that survived the challenge.
+4. Don't auto-defer to Codex on every objection — judge each challenge on merit.
+
+**Deep-dive escape hatch — `codex resume`**
+
+If Codex surfaced something substantial (architectural rabbit hole, subtle race condition, complex root cause) and the user would benefit from continuing the investigation in a full Codex environment rather than within Claude:
+
+1. Get the Codex session ID from `/codex:result` or `/codex:status` output (it's printed alongside the verdict).
+2. Surface this option to the user: *"Codex flagged X — to dig deeper in a full Codex CLI session with the same context, run `codex resume <session-id>`."*
+3. Don't auto-invoke `codex resume` — it's a handoff to a different tool, the user decides.
+
+<CODEx-TOOLING-SKILL-ROUTING>
+## Codex Tooling And Skill Routing
+
+Use this policy in interactive and spawned-agent work. Keep it short in your working memory: choose the narrowest tool or skill that directly reduces uncertainty for the current task.
+
+### MCP / Tool Routing
+- Use GitNexus for trust boundaries, call graphs, affected flows, and impact before assessing or changing security-sensitive code.
+- Use Serena for precise code inspection and reference tracing.
+- Use Context7/official docs for current security-sensitive library behavior.
+- Use Postgres MCP only for read-only inspection of schema, access patterns, or audit evidence.
+
+### Skill Routing
+- Prefer security-audit, backend-security-coder, auth-implementation-patterns, find-bugs, code-review-checklist, compliance skills, and Superpowers systematic-debugging/verification as relevant.
+- Do not use generative UI/image/product skills unless they are directly part of the security surface.
+</CODEx-TOOLING-SKILL-ROUTING>

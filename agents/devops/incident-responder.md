@@ -16,9 +16,15 @@ tools:
 - mcp__context7__resolve-library-id
 - mcp__context7__get-library-docs
 - mcp__sequential-thinking__sequentialthinking
+- mcp__basic-memory__write_note
+- mcp__basic-memory__read_note
+- mcp__basic-memory__search_notes
+- mcp__basic-memory__build_context
+- mcp__basic-memory__edit_note]
 mcpServers:
 - context7
 - sequential-thinking
+- basic-memory
 agy:
   version: 1.0.0
   category: devops
@@ -27,15 +33,27 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 11 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: security/security-incident-responder.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: security/security-incident-responder.md
+    format: markdown-frontmatter
+  - repo: wshobson/agents
+    author: wshobson
+    license: MIT
+    url: https://github.com/wshobson/agents
+    path: plugins/incident-response/agents/incident-responder.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -43,17 +61,35 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/03-infrastructure/incident-responder.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/03-infrastructure/incident-responder.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/03-infrastructure/incident-responder.toml
     format: toml
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
+  - repo: davepoon/buildwithclaude
+    author: davepoon
     license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/03-infrastructure/incident-responder.md
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-quality-security/agents/incident-responder.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/incident-responder.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/infrastructure/incident-responder.md
     format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
@@ -61,11 +97,29 @@ agy:
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/infrastructure/incident-responder.md
     format: markdown-frontmatter
-  - repo: wshobson/agents
-    author: wshobson
+  - repo: avivl/claude-007-agents
+    author: avivl
     license: MIT
-    url: https://github.com/wshobson/agents
-    path: plugins/incident-response/agents/incident-responder.md
+    url: https://github.com/avivl/claude-007-agents
+    path: .claude/agents/infrastructure/incident-responder.md
+    format: markdown-frontmatter
+  - repo: ankitmundada/awesome-gemini-cli-subagents
+    author: ankitmundada
+    license: MIT
+    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
+    path: categories/03-infrastructure/incident-responder.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/incident-responder.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/infrastructure/incident-responder.md
     format: markdown-frontmatter
 ---
 

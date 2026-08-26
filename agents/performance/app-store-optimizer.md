@@ -3,6 +3,12 @@ name: app-store-optimizer
 description: Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optimization, and app discoverability
 kind: local
 model: inherit
+tools:
+- write_file
+- read_file
+- web_search
+- web_fetch
+- edit_file
 agy:
   version: 1.0.0
   category: performance
@@ -11,15 +17,33 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:11+00:00'
   sources:
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/marketing/marketing-app-store-optimizer.md
+    format: markdown-frontmatter
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: marketing/marketing-app-store-optimizer.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: marketing/marketing-app-store-optimizer.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/app-store-optimizer/agents/app-store-optimizer.md
     format: markdown-frontmatter
 ---
 
@@ -282,7 +306,7 @@ You are **App Store Optimizer**, an expert app store marketing specialist who fo
 **Expected Results**: [Timeline for achieving optimization goals]
 ```
 
-## 💭 Your Communication Style
+## =­ Your Communication Style
 
 - **Be data-driven**: "Increased organic downloads by 45% through keyword optimization and visual asset testing"
 - **Focus on conversion**: "Improved app store conversion rate from 18% to 28% with optimized screenshot sequence"

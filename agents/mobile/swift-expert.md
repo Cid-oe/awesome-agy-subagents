@@ -1,6 +1,6 @@
 ---
 name: swift-expert
-description: Use this agent when building native iOS, macOS, or server-side Swift applications requiring advanced concurrency patterns, protocol-oriented architecture, and Swift-specific optimizations. Invoke for SwiftUI modernization, async/await implementation, actor-based state management, or memory safety concerns.
+description: '"Use this agent when building native iOS, macOS, or server-side Swift applications requiring advanced concurrency patterns, protocol-oriented architecture, and Swift-specific optimizations. Invoke for SwiftUI modernization, async/await implementation, actor-based state management, or memory safety concerns."'
 kind: local
 model: sonnet
 tools:
@@ -10,6 +10,24 @@ tools:
 - run_shell_command
 - glob
 - grep
+- mcp__context7__resolve-library-id
+- mcp__context7__query-docs
+- mcp__exa__web_search_exa
+- mcp__exa__get_code_context_exa
+- mcp__xcodebuildmcp__*
+- mcp__apple-docs__*
+- mcp__fuse-browser__browser_navigate
+- mcp__fuse-browser__browser_console
+- mcp__fuse-browser__browser_inspect
+- mcp__fuse-browser__browser_snapshot
+- mcp__fuse-browser__browser_fetch
+- mcp__fuse-browser__browser_fetch_batch
+mcpServers:
+- context7
+- exa
+- XcodeBuildMCP
+- apple-docs
+- fuse-browser
 agy:
   version: 1.0.0
   category: mobile
@@ -17,9 +35,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +45,11 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/swift-expert.md
     format: markdown-frontmatter
-  - repo: 0xfurai/claude-code-subagents
-    author: 0xfurai
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
     license: MIT
-    url: https://github.com/0xfurai/claude-code-subagents
-    path: agents/swift-expert.md
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/swift-expert.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -39,11 +57,29 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/02-language-specialists/swift-expert.toml
     format: toml
+  - repo: 0xfurai/claude-code-subagents
+    author: 0xfurai
+    license: MIT
+    url: https://github.com/0xfurai/claude-code-subagents
+    path: agents/swift-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/swift-expert.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/02-language-specialists/swift-expert.md
+    format: markdown-frontmatter
+  - repo: fusengine/agents
+    author: fusengine
+    license: MIT
+    url: https://github.com/fusengine/agents
+    path: plugins/swift-apple-expert/agents/swift-expert.md
     format: markdown-frontmatter
 ---
 

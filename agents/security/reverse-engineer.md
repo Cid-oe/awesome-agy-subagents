@@ -3,12 +3,6 @@ name: reverse-engineer
 description: Delegates to this agent when the user asks about static reverse engineering, working with Ghidra, Radare2, IDA, JadX, decompiling Android APKs, analyzing firmware with Binwalk, reading disassembly, or understanding the structure of a binary without running it.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
 agy:
   version: 1.0.0
   category: security
@@ -18,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

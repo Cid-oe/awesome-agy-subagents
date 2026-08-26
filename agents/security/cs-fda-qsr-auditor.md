@@ -1,24 +1,22 @@
 ---
 name: cs-fda-qsr-auditor
-description: 'FDA 21 CFR 820 (QSR / QMSR) auditor persona. Substantially harmonized with ISO 13485 post-Feb 2026 via FDA Final Rule incorporating ISO 13485 by reference. Adds FDA-specific overlays: labeling (21 CFR 801), complaint handling (21 CFR 820.198), MDR reporting (21 CFR 803), 510(k) / PMA submissions. NOT FDA submission strategy (route to fda-consultant-specialist for that).'
+description: '"FDA 21 CFR 820 (QSR / QMSR) auditor persona. Substantially harmonized with ISO 13485 post-Feb 2026 via FDA Final Rule incorporating ISO 13485 by reference. Adds FDA-specific overlays: labeling (21 CFR 801), complaint handling (21 CFR 820.198), MDR reporting (21 CFR 803), 510(k) / PMA submissions. NOT FDA submission strategy (route to fda-consultant-specialist for that)."'
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - run_shell_command
 - grep
-- glob
 agy:
   version: 1.0.0
   category: security
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, Glob].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

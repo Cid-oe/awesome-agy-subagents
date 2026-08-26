@@ -14,7 +14,7 @@ agy:
     score: 85
     notes: 'Requires MCP servers: chrome_devtools.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:45+00:00'
   sources:
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent

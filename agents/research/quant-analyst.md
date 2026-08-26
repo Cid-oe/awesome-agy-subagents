@@ -1,6 +1,6 @@
 ---
 name: quant-analyst
-description: Use this agent when you need to develop quantitative trading strategies, build financial models with rigorous mathematical foundations, or conduct advanced risk analytics for derivatives and portfolios. Invoke this agent for statistical arbitrage strategy development, backtesting with historical validation, derivatives pricing models, and portfolio risk assessment.
+description: '"Use this agent when you need to develop quantitative trading strategies, build financial models with rigorous mathematical foundations, or conduct advanced risk analytics for derivatives and portfolios. Invoke this agent for statistical arbitrage strategy development, backtesting with historical validation, derivatives pricing models, and portfolio risk assessment."'
 kind: local
 model: inherit
 tools:
@@ -10,6 +10,12 @@ tools:
 - run_shell_command
 - glob
 - grep
+- mcp__context7__resolve-library-id
+- mcp__context7__get-library-docs
+- mcp__sequential-thinking__sequentialthinking
+mcpServers:
+- context7
+- sequential-thinking
 agy:
   version: 1.0.0
   category: research
@@ -17,9 +23,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 6 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,23 +33,53 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/07-specialized-domains/quant-analyst.md
     format: markdown-frontmatter
-  - repo: VoltAgent/awesome-codex-subagents
-    author: VoltAgent
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
     license: MIT
-    url: https://github.com/VoltAgent/awesome-codex-subagents
-    path: categories/07-specialized-domains/quant-analyst.toml
-    format: toml
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/07-specialized-domains/quant-analyst.md
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/07-specialized-domains/quant-analyst.md
     format: markdown-frontmatter
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/quantitative-trading/agents/quant-analyst.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/quant-analyst.md
+    format: markdown-frontmatter
+  - repo: VoltAgent/awesome-codex-subagents
+    author: VoltAgent
+    license: MIT
+    url: https://github.com/VoltAgent/awesome-codex-subagents
+    path: categories/07-specialized-domains/quant-analyst.toml
+    format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-business-finance/agents/quant-analyst.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/quant-analyst.md
+    format: markdown-frontmatter
+  - repo: ankitmundada/awesome-gemini-cli-subagents
+    author: ankitmundada
+    license: MIT
+    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
+    path: categories/07-specialized-domains/quant-analyst.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/data-ai/quant-analyst.md
     format: markdown-frontmatter
 ---
 

@@ -1,10 +1,9 @@
 ---
 name: refactorer
-description: Proactively refactor code to comply with rules/coding-standards.md through behavior-preserving
+description: '"Proactively refactor code to comply with rules/coding-standards.md through behavior-preserving"'
 kind: local
 model: sonnet
 tools:
-- read_file
 - edit_file
 - write_file
 - run_shell_command
@@ -21,7 +20,7 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -32,9 +31,9 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 2 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
@@ -42,6 +41,12 @@ agy:
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/refactorer.md
     format: markdown-frontmatter
+  - repo: CloudAI-X/claude-workflow-v2
+    author: CloudAI-X
+    license: MIT
+    url: https://github.com/CloudAI-X/claude-workflow-v2
+    path: .codex/agents/refactorer.toml
+    format: toml
 ---
 
 <identity>

@@ -3,7 +3,7 @@ name: memory-analyst
 description: Read-only analyst for `~/.claude/projects/<project>/memory/`. Identifies promotion candidates (entries proven enough for CLAUDE.md), stale references, consolidation opportunities, conflicts with existing CLAUDE.md rules, and reports health metrics (capacity, freshness, organization). Spawned by `/si:memory-review`.
 kind: local
 model: inherit
-max_turns: 30
+max_turns: '30'
 tools:
 - read_file
 - glob
@@ -17,7 +17,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

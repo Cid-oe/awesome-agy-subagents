@@ -7,14 +7,33 @@ agy:
   version: 1.0.0
   category: performance
   tags:
+  - terminal_integration_specialist
   - Terminal Integration Specialist
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:13:44+00:00'
   sources:
+  - repo: VKirill/codex-starter-kit
+    author: VKirill
+    license: MIT
+    url: https://github.com/VKirill/codex-starter-kit
+    path: agents/terminal_integration_specialist.toml
+    format: toml
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: spatial-computing/terminal-integration-specialist.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/spatial-computing/terminal-integration-specialist.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -85,3 +104,19 @@ Focuses on creating robust, performant terminal experiences that feel native to 
 - Specializes in SwiftTerm specifically (not other terminal emulator libraries)
 - Focuses on client-side terminal emulation (not server-side terminal management)
 - Apple platform optimization (not cross-platform terminal solutions)
+
+<CODEx-TOOLING-SKILL-ROUTING>
+## Codex Tooling And Skill Routing
+
+Use this policy in interactive and spawned-agent work. Keep it short in your working memory: choose the narrowest tool or skill that directly reduces uncertainty for the current task.
+
+### MCP / Tool Routing
+- Use Context7 or official docs for current cloud, CI, container, and infrastructure behavior.
+- Use GitNexus when infra changes affect application startup, deployment scripts, or runtime flows.
+- Use Serena for repository scripts/config navigation when code symbols are involved.
+- Use Postgres MCP only for read-only inspection when database operations are part of the task.
+
+### Skill Routing
+- Prefer docker-expert, terraform-specialist, github-actions-templates, linux-sysadmin, server-management, incident-responder, performance-engineer, and Superpowers verification skills as relevant.
+- Avoid product/design/frontend skills unless the operational task explicitly depends on them.
+</CODEx-TOOLING-SKILL-ROUTING>

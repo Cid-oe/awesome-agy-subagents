@@ -1,6 +1,6 @@
 ---
 name: devops-incident-responder
-description: Use when actively responding to production incidents, diagnosing critical service failures, or conducting incident postmortems to implement permanent fixes and preventative measures.
+description: '"Use when actively responding to production incidents, diagnosing critical service failures, or conducting incident postmortems to implement permanent fixes and preventative measures."'
 kind: local
 model: sonnet
 tools:
@@ -26,9 +26,9 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -36,23 +36,35 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/03-infrastructure/devops-incident-responder.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/03-infrastructure/devops-incident-responder.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/03-infrastructure/devops-incident-responder.toml
     format: toml
+  - repo: lst97/claude-code-sub-agents
+    author: lst97
+    license: MIT
+    url: https://github.com/lst97/claude-code-sub-agents
+    path: agents/infrastructure/devops-incident-responder.md
+    format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/03-infrastructure/devops-incident-responder.md
     format: markdown-frontmatter
-  - repo: lst97/claude-code-sub-agents
-    author: lst97
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
     license: MIT
-    url: https://github.com/lst97/claude-code-sub-agents
-    path: agents/infrastructure/devops-incident-responder.md
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/infrastructure/devops-incident-responder.md
     format: markdown-frontmatter
 ---
 

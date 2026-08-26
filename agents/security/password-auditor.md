@@ -3,14 +3,6 @@ name: password-auditor
 description: Delegates to this agent when the user wants to audit password posture — policy review against NIST 800-63B, password-storage/hashing review, breach-exposure checks, and lockout-safe password-spray planning. Advisory and planning only; hands active cracking and live spraying to credential-tester.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

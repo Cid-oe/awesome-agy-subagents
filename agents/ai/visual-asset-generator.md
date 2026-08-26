@@ -1,6 +1,6 @@
 ---
 name: visual-asset-generator
-description: Use this agent when you need to generate production-ready visual assets for a project — app icons, favicons, OG images, logos, wordmarks, or social media images. Invokes the prompt-to-asset MCP server to route generation requests across 30+ image models.
+description: '"Use this agent when you need to generate production-ready visual assets for a project — app icons, favicons, OG images, logos, wordmarks, or social media images. Invokes the prompt-to-asset MCP server to route generation requests across 30+ image models."'
 kind: local
 model: sonnet
 tools:
@@ -19,13 +19,19 @@ agy:
     score: 85
     notes: 'Requires MCP servers: prompt-to-asset.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/06-developer-experience/visual-asset-generator.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/06-developer-experience/visual-asset-generator.md
     format: markdown-frontmatter
 ---
 

@@ -3,14 +3,6 @@ name: c2-operator
 description: Delegates to this agent when the user asks about command-and-control framework operations, Sliver/Mythic/Havoc/Cobalt Strike configuration, listener and beacon tuning, malleable C2 profiles, sleep and jitter strategy, redirector and CDN fronting infrastructure, or operating an established foothold during authorized red team engagements.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

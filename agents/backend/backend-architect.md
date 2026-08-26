@@ -4,12 +4,12 @@ description: Senior backend architect specializing in scalable system design, da
 kind: local
 model: inherit
 tools:
-- read_file
-- glob
 - write_file
+- read_file
 - edit_file
-- grep
 - run_shell_command
+- grep
+- glob
 - list_dir
 - web_search
 - web_fetch
@@ -28,15 +28,33 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required. Merged 4 same-name variants into one canonical agent.
+    notes: Converted directly; no manual steps required. Merged 9 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: integrations/mcp-memory/backend-architect-with-memory.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/integrations/mcp-memory/backend-architect-with-memory.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
     url: https://github.com/Raheel2774/agency-agents
     path: integrations/mcp-memory/backend-architect-with-memory.md
+    format: markdown-frontmatter
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: engineering/engineering-backend-architect.md
     format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
@@ -44,17 +62,59 @@ agy:
     url: https://github.com/Raheel2774/agency-agents
     path: engineering/engineering-backend-architect.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/core-development/backend-architect.md
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-development-architecture/agents/backend-architect.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/backend-architect.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/engineering/engineering-backend-architect.md
+    format: markdown-frontmatter
+  - repo: composio-community/awesome-claude-plugins
+    author: composio-community
+    license: ''
+    url: https://github.com/composio-community/awesome-claude-plugins
+    path: backend-architect/agents/backend-architect.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/backend-architect/agents/backend-architect.md
     format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/development/backend-architect.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/core-development/backend-architect.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/backend-architect.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/backend-architect.md
     format: markdown-frontmatter
 ---
 

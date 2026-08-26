@@ -27,7 +27,7 @@ Thanks for helping grow the AGY ecosystem! There are two ways to contribute:
 4. Open a PR. CI and maintainers will check that the agent is complete,
    valid, and correctly categorized.
 
-Categories are the 26 canonical slugs (see `scripts/agy.py`). Pick the closest
+Categories are the 27 canonical slugs (see `scripts/agy.py`). Pick the closest
 one; the maintainers can adjust during review.
 
 ## Importing a new upstream repository

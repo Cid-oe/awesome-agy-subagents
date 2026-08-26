@@ -30,14 +30,50 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: context7, playwright. Merged 5 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: context7, playwright. Merged 8 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:27+00:00'
   sources:
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
+    path: agents/quality-testing/test-automator.md
+    format: markdown-frontmatter
+  - repo: VoltAgent/awesome-claude-code-subagents
+    author: VoltAgent
+    license: MIT
+    url: https://github.com/VoltAgent/awesome-claude-code-subagents
+    path: categories/04-quality-security/test-automator.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/04-quality-security/test-automator.md
+    format: markdown-frontmatter
+  - repo: VoltAgent/awesome-codex-subagents
+    author: VoltAgent
+    license: MIT
+    url: https://github.com/VoltAgent/awesome-codex-subagents
+    path: categories/04-quality-security/test-automator.toml
+    format: toml
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-quality-security/agents/test-automator.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/test-automator.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
     path: agents/quality-testing/test-automator.md
     format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
@@ -46,24 +82,18 @@ agy:
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/04-quality-security/test-automator.md
     format: markdown-frontmatter
-  - repo: VoltAgent/awesome-claude-code-subagents
-    author: VoltAgent
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
     license: MIT
-    url: https://github.com/VoltAgent/awesome-claude-code-subagents
-    path: categories/04-quality-security/test-automator.md
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/test-automator.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/quality-testing/test-automator.md
-    format: markdown-frontmatter
-  - repo: VoltAgent/awesome-codex-subagents
-    author: VoltAgent
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
     license: MIT
-    url: https://github.com/VoltAgent/awesome-codex-subagents
-    path: categories/04-quality-security/test-automator.toml
-    format: toml
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/quality-testing/test-automator.md
+    format: markdown-frontmatter
 ---
 
 # Test Automator

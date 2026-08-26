@@ -3,7 +3,7 @@ name: skill-extractor
 description: Transforms a proven pattern or debugging solution into a standalone, portable skill package. Generates `SKILL.md` with proper frontmatter, reference docs, and examples that work in any project (no hardcoded paths or project-specific values). Spawned by `/si:extract` when a recurring solution should become reusable.
 kind: local
 model: inherit
-max_turns: 30
+max_turns: '30'
 tools:
 - read_file
 - write_file
@@ -19,7 +19,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

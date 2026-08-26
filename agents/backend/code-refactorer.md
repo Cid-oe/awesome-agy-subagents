@@ -19,13 +19,25 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:14+00:00'
   sources:
   - repo: iannuttall/claude-agents
     author: iannuttall
     license: MIT
     url: https://github.com/iannuttall/claude-agents
     path: agents/code-refactorer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-agents/agents/code-refactorer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-sub-agent/agents/refactor-agent.md
     format: markdown-frontmatter
 ---
 

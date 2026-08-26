@@ -3,11 +3,6 @@ name: mongodb-expert
 description: Master MongoDB operations, schema design, performance optimization, and data modeling. Handles indexing, aggregations, and replication. Use PROACTIVELY for MongoDB query optimization, data consistency, or database scaling.
 kind: local
 model: claude-sonnet-4-20250514
-tools:
-- read_file
-- glob
-- write_file
-- run_shell_command
 agy:
   version: 1.0.0
   category: database
@@ -17,13 +12,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:08:00+00:00'
   sources:
   - repo: 0xfurai/claude-code-subagents
     author: 0xfurai
     license: MIT
     url: https://github.com/0xfurai/claude-code-subagents
     path: agents/mongodb-expert.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-subagents/agents/mongodb-expert.md
     format: markdown-frontmatter
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

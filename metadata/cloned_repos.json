@@ -1,152 +1,200 @@
 {
-  "0xNyk/council-of-high-intelligence": {
-    "full_name": "0xNyk/council-of-high-intelligence",
-    "stars": 4142,
+  "anomalyco/opencode": {
+    "full_name": "anomalyco/opencode",
+    "stars": 201485,
     "license": "MIT",
-    "path": "imports/sources/0xNyk--council-of-high-intelligence"
+    "path": "imports/sources/anomalyco--opencode"
   },
-  "0xSteph/pentest-ai-agents": {
-    "full_name": "0xSteph/pentest-ai-agents",
-    "stars": 2158,
+  "msitarzewski/agency-agents": {
+    "full_name": "msitarzewski/agency-agents",
+    "stars": 148074,
     "license": "MIT",
-    "path": "imports/sources/0xSteph--pentest-ai-agents"
+    "path": "imports/sources/msitarzewski--agency-agents"
   },
-  "0xfurai/claude-code-subagents": {
-    "full_name": "0xfurai/claude-code-subagents",
-    "stars": 989,
+  "nextlevelbuilder/ui-ux-pro-max-skill": {
+    "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "stars": 121070,
     "license": "MIT",
-    "path": "imports/sources/0xfurai--claude-code-subagents"
+    "path": "imports/sources/nextlevelbuilder--ui-ux-pro-max-skill"
   },
-  "Donchitos/Claude-Code-Game-Studios": {
-    "full_name": "Donchitos/Claude-Code-Game-Studios",
-    "stars": 24514,
-    "license": "MIT",
-    "path": "imports/sources/Donchitos--Claude-Code-Game-Studios"
-  },
-  "Doriandarko/maestro": {
-    "full_name": "Doriandarko/maestro",
-    "stars": 4357,
-    "license": null,
-    "path": "imports/sources/Doriandarko--maestro"
-  },
-  "HazAT/pi-interactive-subagents": {
-    "full_name": "HazAT/pi-interactive-subagents",
-    "stars": 627,
-    "license": "MIT",
-    "path": "imports/sources/HazAT--pi-interactive-subagents"
-  },
-  "JosephHampton/awesome-gemini-cli-subagents": {
-    "full_name": "JosephHampton/awesome-gemini-cli-subagents",
-    "stars": 45,
+  "lobehub/lobehub": {
+    "full_name": "lobehub/lobehub",
+    "stars": 82006,
     "license": "NOASSERTION",
-    "path": "imports/sources/JosephHampton--awesome-gemini-cli-subagents"
+    "path": "imports/sources/lobehub--lobehub"
   },
-  "Raheel2774/agency-agents": {
-    "full_name": "Raheel2774/agency-agents",
-    "stars": 10,
+  "rtk-ai/rtk": {
+    "full_name": "rtk-ai/rtk",
+    "stars": 77464,
+    "license": "Apache-2.0",
+    "path": "imports/sources/rtk-ai--rtk"
+  },
+  "shareAI-lab/learn-claude-code": {
+    "full_name": "shareAI-lab/learn-claude-code",
+    "stars": 75338,
     "license": "MIT",
-    "path": "imports/sources/Raheel2774--agency-agents"
+    "path": "imports/sources/shareAI-lab--learn-claude-code"
   },
-  "VoltAgent/awesome-claude-code-subagents": {
-    "full_name": "VoltAgent/awesome-claude-code-subagents",
-    "stars": 24613,
+  "ruvnet/ruflo": {
+    "full_name": "ruvnet/ruflo",
+    "stars": 69433,
     "license": "MIT",
-    "path": "imports/sources/VoltAgent--awesome-claude-code-subagents"
+    "path": "imports/sources/ruvnet--ruflo"
   },
-  "VoltAgent/awesome-codex-subagents": {
-    "full_name": "VoltAgent/awesome-codex-subagents",
-    "stars": 6023,
-    "license": "MIT",
-    "path": "imports/sources/VoltAgent--awesome-codex-subagents"
-  },
-  "alirezarezvani/claude-skills": {
-    "full_name": "alirezarezvani/claude-skills",
-    "stars": 24925,
-    "license": "MIT",
-    "path": "imports/sources/alirezarezvani--claude-skills"
-  },
-  "amrekansky/headless-pm": {
-    "full_name": "amrekansky/headless-pm",
-    "stars": 8,
+  "code-yeongyu/oh-my-openagent": {
+    "full_name": "code-yeongyu/oh-my-openagent",
+    "stars": 68383,
     "license": "NOASSERTION",
-    "path": "imports/sources/amrekansky--headless-pm"
+    "path": "imports/sources/code-yeongyu--oh-my-openagent"
   },
-  "ankitmundada/awesome-gemini-cli-subagents": {
-    "full_name": "ankitmundada/awesome-gemini-cli-subagents",
-    "stars": 37,
-    "license": "MIT",
-    "path": "imports/sources/ankitmundada--awesome-gemini-cli-subagents"
-  },
-  "arbazkhan971/godmode": {
-    "full_name": "arbazkhan971/godmode",
-    "stars": 25,
-    "license": "MIT",
-    "path": "imports/sources/arbazkhan971--godmode"
-  },
-  "cdeust/zetetic-team-subagents": {
-    "full_name": "cdeust/zetetic-team-subagents",
-    "stars": 7,
-    "license": "MIT",
-    "path": "imports/sources/cdeust--zetetic-team-subagents"
-  },
-  "gemini-cli-extensions/conductor": {
-    "full_name": "gemini-cli-extensions/conductor",
-    "stars": 3709,
+  "openinterpreter/openinterpreter": {
+    "full_name": "openinterpreter/openinterpreter",
+    "stars": 68154,
     "license": "Apache-2.0",
-    "path": "imports/sources/gemini-cli-extensions--conductor"
+    "path": "imports/sources/openinterpreter--openinterpreter"
   },
-  "iannuttall/claude-agents": {
-    "full_name": "iannuttall/claude-agents",
-    "stars": 2049,
+  "shanraisshan/claude-code-best-practice": {
+    "full_name": "shanraisshan/claude-code-best-practice",
+    "stars": 65127,
     "license": "MIT",
-    "path": "imports/sources/iannuttall--claude-agents"
+    "path": "imports/sources/shanraisshan--claude-code-best-practice"
   },
-  "lst97/claude-code-sub-agents": {
-    "full_name": "lst97/claude-code-sub-agents",
-    "stars": 1672,
+  "gsd-build/get-shit-done": {
+    "full_name": "gsd-build/get-shit-done",
+    "stars": 64639,
     "license": "MIT",
-    "path": "imports/sources/lst97--claude-code-sub-agents"
+    "path": "imports/sources/gsd-build--get-shit-done"
   },
-  "roy2392/sdlc-subagents-cli": {
-    "full_name": "roy2392/sdlc-subagents-cli",
-    "stars": 9,
-    "license": "MIT",
-    "path": "imports/sources/roy2392--sdlc-subagents-cli"
+  "asgeirtj/system_prompts_leaks": {
+    "full_name": "asgeirtj/system_prompts_leaks",
+    "stars": 63583,
+    "license": "CC0-1.0",
+    "path": "imports/sources/asgeirtj--system_prompts_leaks"
   },
-  "shinpr/sub-agents-mcp": {
-    "full_name": "shinpr/sub-agents-mcp",
-    "stars": 96,
-    "license": "MIT",
-    "path": "imports/sources/shinpr--sub-agents-mcp"
-  },
-  "shinpr/sub-agents-skills": {
-    "full_name": "shinpr/sub-agents-skills",
-    "stars": 80,
-    "license": "MIT",
-    "path": "imports/sources/shinpr--sub-agents-skills"
-  },
-  "sodam-ai/SoDam-Agent": {
-    "full_name": "sodam-ai/SoDam-Agent",
-    "stars": 16,
+  "pbakaus/impeccable": {
+    "full_name": "pbakaus/impeccable",
+    "stars": 62708,
     "license": "Apache-2.0",
-    "path": "imports/sources/sodam-ai--SoDam-Agent"
+    "path": "imports/sources/pbakaus--impeccable"
   },
-  "tintinweb/pi-subagents": {
-    "full_name": "tintinweb/pi-subagents",
-    "stars": 953,
+  "sickn33/agentic-awesome-skills": {
+    "full_name": "sickn33/agentic-awesome-skills",
+    "stars": 45403,
     "license": "MIT",
-    "path": "imports/sources/tintinweb--pi-subagents"
+    "path": "imports/sources/sickn33--agentic-awesome-skills"
+  },
+  "bojieli/ai-agent-book": {
+    "full_name": "bojieli/ai-agent-book",
+    "stars": 42360,
+    "license": "Apache-2.0",
+    "path": "imports/sources/bojieli--ai-agent-book"
+  },
+  "luongnv89/claude-howto": {
+    "full_name": "luongnv89/claude-howto",
+    "stars": 41195,
+    "license": "MIT",
+    "path": "imports/sources/luongnv89--claude-howto"
   },
   "wshobson/agents": {
     "full_name": "wshobson/agents",
-    "stars": 39099,
+    "stars": 39137,
     "license": "MIT",
     "path": "imports/sources/wshobson--agents"
   },
-  "zubair-trabzada/ai-marketing-claude": {
-    "full_name": "zubair-trabzada/ai-marketing-claude",
-    "stars": 2542,
+  "github/awesome-copilot": {
+    "full_name": "github/awesome-copilot",
+    "stars": 38262,
     "license": "MIT",
-    "path": "imports/sources/zubair-trabzada--ai-marketing-claude"
+    "path": "imports/sources/github--awesome-copilot"
+  },
+  "agentscope-ai/QwenPaw": {
+    "full_name": "agentscope-ai/QwenPaw",
+    "stars": 34480,
+    "license": "Apache-2.0",
+    "path": "imports/sources/agentscope-ai--QwenPaw"
+  },
+  "anthropics/claude-plugins-official": {
+    "full_name": "anthropics/claude-plugins-official",
+    "stars": 34190,
+    "license": "Apache-2.0",
+    "path": "imports/sources/anthropics--claude-plugins-official"
+  },
+  "eyaltoledano/claude-task-master": {
+    "full_name": "eyaltoledano/claude-task-master",
+    "stars": 28022,
+    "license": "NOASSERTION",
+    "path": "imports/sources/eyaltoledano--claude-task-master"
+  },
+  "can1357/oh-my-pi": {
+    "full_name": "can1357/oh-my-pi",
+    "stars": 27534,
+    "license": "MIT",
+    "path": "imports/sources/can1357--oh-my-pi"
+  },
+  "alirezarezvani/claude-skills": {
+    "full_name": "alirezarezvani/claude-skills",
+    "stars": 24986,
+    "license": "MIT",
+    "path": "imports/sources/alirezarezvani--claude-skills"
+  },
+  "trycua/cua": {
+    "full_name": "trycua/cua",
+    "stars": 21900,
+    "license": "MIT",
+    "path": "imports/sources/trycua--cua"
+  },
+  "wanshuiyin/Auto-claude-code-research-in-sleep": {
+    "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "stars": 15260,
+    "license": "MIT",
+    "path": "imports/sources/wanshuiyin--Auto-claude-code-research-in-sleep"
+  },
+  "getpaseo/paseo": {
+    "full_name": "getpaseo/paseo",
+    "stars": 15096,
+    "license": "NOASSERTION",
+    "path": "imports/sources/getpaseo--paseo"
+  },
+  "superset-sh/superset": {
+    "full_name": "superset-sh/superset",
+    "stars": 13366,
+    "license": "NOASSERTION",
+    "path": "imports/sources/superset-sh--superset"
+  },
+  "humanlayer/humanlayer": {
+    "full_name": "humanlayer/humanlayer",
+    "stars": 11336,
+    "license": "NOASSERTION",
+    "path": "imports/sources/humanlayer--humanlayer"
+  },
+  "openchamber/openchamber": {
+    "full_name": "openchamber/openchamber",
+    "stars": 9233,
+    "license": "MIT",
+    "path": "imports/sources/openchamber--openchamber"
+  },
+  "alvinunreal/oh-my-opencode-slim": {
+    "full_name": "alvinunreal/oh-my-opencode-slim",
+    "stars": 8417,
+    "license": "MIT",
+    "path": "imports/sources/alvinunreal--oh-my-opencode-slim"
+  },
+  "backnotprop/plannotator": {
+    "full_name": "backnotprop/plannotator",
+    "stars": 8035,
+    "license": "Apache-2.0",
+    "path": "imports/sources/backnotprop--plannotator"
+  },
+  "google/agents-cli": {
+    "full_name": "google/agents-cli",
+    "stars": 5725,
+    "license": "Apache-2.0",
+    "path": "imports/sources/google--agents-cli"
+  },
+  "areal-project/AReaL": {
+    "full_name": "areal-project/AReaL",
+    "stars": 5694,
+    "license": "Apache-2.0",
+    "path": "imports/sources/areal-project--AReaL"
   }
 }

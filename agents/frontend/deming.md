@@ -1,10 +1,9 @@
 ---
 name: deming
-description: W. Edwards Deming reasoning pattern — classify variation as common-cause (redesign the system) or special-cause (find the event) before reacting, run PDSA with an explicit prediction, and drive out fear that corrupts the data every improvement method depends on
+description: '"W. Edwards Deming reasoning pattern — classify variation as common-cause (redesign the system) or special-cause (find the event) before reacting, run PDSA with an explicit prediction, and drive out fear that corrupts the data every improvement method depends on"'
 kind: local
 model: opus
 tools:
-- read_file
 - edit_file
 - write_file
 - run_shell_command
@@ -23,7 +22,7 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -36,7 +35,7 @@ agy:
     score: 85
     notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust

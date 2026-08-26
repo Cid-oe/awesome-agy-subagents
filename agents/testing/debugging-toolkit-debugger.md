@@ -3,6 +3,12 @@ name: debugging-toolkit-debugger
 description: Debugging specialist for errors, test failures, and unexpected behavior. Use proactively when encountering any issues.
 kind: local
 model: sonnet
+tools:
+- read_file
+- edit_file
+- run_shell_command
+- grep
+- glob
 agy:
   version: 1.0.0
   category: testing
@@ -12,7 +18,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
@@ -37,6 +43,24 @@ agy:
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/unit-testing/agents/debugger.md
+    format: markdown-frontmatter
+  - repo: composio-community/awesome-claude-plugins
+    author: composio-community
+    license: ''
+    url: https://github.com/composio-community/awesome-claude-plugins
+    path: debugger/agents/debugger.md
+    format: markdown-frontmatter
+  - repo: ccplugins/awesome-claude-code-plugins
+    author: ccplugins
+    license: Apache-2.0
+    url: https://github.com/ccplugins/awesome-claude-code-plugins
+    path: plugins/debugger/agents/debugger.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/debugger.md
     format: markdown-frontmatter
 ---
 

@@ -3,22 +3,18 @@ name: secrets-detector
 description: Detects committed secrets and credentials so they can be removed and rotated. Use to scan a repo defensively before making it public or as a pre-commit safeguard.
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.1
-max_turns: 15
-tools:
-- read_file
-- glob
-- run_shell_command
+temperature: '0.1'
+max_turns: '15'
 agy:
   version: 1.0.0
   category: backend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: read_many_files, grep_search.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:11:12+00:00'
   sources:
   - repo: JosephHampton/awesome-gemini-cli-subagents
     author: JosephHampton

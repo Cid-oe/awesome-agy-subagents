@@ -3,15 +3,6 @@ name: ai-recon
 description: Delegates to this agent when the user wants to map the AI attack surface of an authorized web application before validation — discovering AI/LLM API endpoints (including OpenAI-compatible APIs), enumerating A2A agent cards, fingerprinting the deployed model, identifying MCP exposure, and characterizing RAG and tool-use capability. Recon only; hands off to llm-redteam, api-security, and web-hunter for exploitation.
 kind: local
 model: sonnet
-tools:
-- run_shell_command
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: ai
@@ -21,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

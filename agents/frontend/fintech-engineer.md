@@ -1,6 +1,6 @@
 ---
 name: fintech-engineer
-description: Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy.
+description: '"Use when building payment systems, financial integrations, or compliance-heavy financial applications that require secure transaction processing, regulatory adherence, and high transaction accuracy."'
 kind: local
 model: inherit
 tools:
@@ -19,7 +19,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
@@ -27,11 +27,17 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/07-specialized-domains/fintech-engineer.md
     format: markdown-frontmatter
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
     license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/07-specialized-domains/fintech-engineer.md
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/07-specialized-domains/fintech-engineer.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/specialized-domains/fintech-engineer.md
     format: markdown-frontmatter
 ---
 

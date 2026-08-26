@@ -3,14 +3,6 @@ name: scada-attacker
 description: Delegates to this agent when the user wants authorized ICS/OT/SCADA security testing — Modbus/DNP3/S7comm/EtherNet-IP/OPC-UA protocol analysis, PLC/HMI/RTU enumeration, and Purdue-model attack-path mapping. Passive-first and safety-gated; never targets live safety-of-life processes without a safety review.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

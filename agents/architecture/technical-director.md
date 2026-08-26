@@ -1,9 +1,9 @@
 ---
 name: technical-director
-description: The Technical Director owns all high-level technical decisions including engine architecture, technology choices, performance strategy, and technical risk management. Use this agent for architecture-level decisions, technology evaluations, cross-system technical conflicts, and when a technical choice will constrain or enable design possibilities.
+description: '"The Technical Director owns all high-level technical decisions including engine architecture, technology choices, performance strategy, and technical risk management. Use this agent for architecture-level decisions, technology evaluations, cross-system technical conflicts, and when a technical choice will constrain or enable design possibilities."'
 kind: local
 model: opus
-max_turns: 30
+max_turns: '30'
 tools:
 - read_file
 - glob
@@ -21,7 +21,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos

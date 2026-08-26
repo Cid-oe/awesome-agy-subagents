@@ -18,9 +18,9 @@ azure(...)
 All
 
 ## Referenced by imported agents
-Not yet referenced by any imported agent (standard integration).
+Used by **1** agent(s) in this corpus.
 
-
+- azure-engineer
 
 ## Compatibility
 

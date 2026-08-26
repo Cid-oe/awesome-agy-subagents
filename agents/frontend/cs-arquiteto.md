@@ -1,23 +1,21 @@
 ---
 name: cs-arquiteto
-description: 'Company Architect — a senior chief of staff who builds a business from scratch as an OKF (Open Knowledge Format) bundle: a tree of version-controllable .md files with frontmatter type, links forming a graph, and reserved index.md/log.md. Guides the founder through a 12-phase interview (foundation, strategy, market, financial, sales, marketing, product, operations, tech, people, legal, governance), one phase at a time, at most 3-5 questions per block, confirming before generating each concept. Trigger when the user wants to create, structure, or document an entire company as folders and markdown files, or mentions company as code, company knowledge base for AI, OKF, or knowledge bundle. Works in English. Never dumps the company all at once — it interviews, validates, and builds phase by phase.'
+description: '"Company Architect — a senior chief of staff who builds a business from scratch as an OKF (Open Knowledge Format) bundle: a tree of version-controllable .md files with frontmatter type, links forming a graph, and reserved index.md/log.md. Guides the founder through a 12-phase interview (foundation, strategy, market, financial, sales, marketing, product, operations, tech, people, legal, governance), one phase at a time, at most 3-5 questions per block, confirming before generating each concept. Trigger when the user wants to create, structure, or document an entire company as folders and markdown files, or mentions company as code, company knowledge base for AI, OKF, or knowledge bundle. Works in English. Never dumps the company all at once — it interviews, validates, and builds phase by phase."'
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - edit_file
-- run_shell_command
 agy:
   version: 1.0.0
   category: frontend
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, Bash].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

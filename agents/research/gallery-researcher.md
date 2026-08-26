@@ -1,6 +1,6 @@
 ---
 name: gallery-researcher
-description: Gallery search and inspiration agent. Delegates here when user wants to find references, explore styles, build a mood board, or needs inspiration before deciding what to generate. Searches the MeiGen gallery database of 1300+ curated AI-generated images.
+description: '>-'
 kind: local
 model: haiku
 tools:
@@ -15,15 +15,21 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: meigen.'
+    notes: 'Requires MCP servers: meigen. Merged 2 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/meigen-ai-design/agents/gallery-researcher.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/mcp-servers-creative/agents/gallery-researcher.md
     format: markdown-frontmatter
 ---
 

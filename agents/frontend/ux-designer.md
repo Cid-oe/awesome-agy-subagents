@@ -1,10 +1,9 @@
 ---
 name: ux-designer
-description: UX/UI designer focused on usability, accessibility, information architecture, and design systems
+description: '"UX/UI designer focused on usability, accessibility, information architecture, and design systems"'
 kind: local
 model: sonnet
 tools:
-- read_file
 - glob
 - grep
 - web_fetch
@@ -20,11 +19,17 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
-- write_file
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
 - edit_file
 - run_shell_command
 - list_dir
+- mcp__basic-memory__write_note
+- mcp__basic-memory__read_note
+- mcp__basic-memory__search_notes
+- mcp__basic-memory__build_context
+- mcp__basic-memory__edit_note]
+- read_file
+- write_file
 - todo
 - mcp__context7__resolve-library-id
 - mcp__context7__get-library-docs
@@ -34,19 +39,22 @@ tools:
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
+- basic-memory
 - context7
 - sequential-thinking
 - playwright
 agy:
   version: 1.0.0
   category: frontend
-  tags: []
+  tags:
+  - ux_designer
+  - UX Designer
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 3 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 10 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
@@ -54,17 +62,83 @@ agy:
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/ux-designer.md
     format: markdown-frontmatter
+  - repo: avivl/claude-007-agents
+    author: avivl
+    license: MIT
+    url: https://github.com/avivl/claude-007-agents
+    path: .claude/agents/design/ux-designer.md
+    format: markdown-frontmatter
+  - repo: wesammustafa/Claude-Code-Everything-You-Need-to-Know
+    author: wesammustafa
+    license: MIT
+    url: https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know
+    path: .claude/agents/ux-designer.md
+    format: markdown-frontmatter
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos
     license: MIT
     url: https://github.com/Donchitos/Claude-Code-Game-Studios
     path: .claude/agents/ux-designer.md
     format: markdown-frontmatter
+  - repo: shanraisshan/claude-code-best-practice
+    author: shanraisshan
+    license: MIT
+    url: https://github.com/shanraisshan/claude-code-best-practice
+    path: development-workflows/rpi/.claude/agents/ux-designer.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/development/ux-designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: agents/ux_designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/agents/ux-designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: qwen/agents/ux_designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/src/agents/ux-designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: plugins/maestro/src/agents/ux-designer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: src/agents/ux-designer.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/ux-designer.md
+    format: markdown-frontmatter
+  - repo: frankxai/agentic-creator-os
+    author: frankxai
+    license: ''
+    url: https://github.com/frankxai/agentic-creator-os
+    path: .claude/agents/ux-design-development.md
     format: markdown-frontmatter
 ---
 

@@ -4,20 +4,18 @@ description: Academic literature orientation persona. Walks 3 forcing intake que
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - run_shell_command
-- web_fetch
 agy:
   version: 1.0.0
   category: research
   tags: []
   compatibility:
-    status: fully-compatible
-    score: 100
-    notes: Converted directly; no manual steps required.
+    status: needs-tool-mapping
+    score: 75
+    notes: 'Unmapped tools: [Read, WebFetch].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

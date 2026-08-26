@@ -3,14 +3,6 @@ name: container-breakout
 description: Delegates to this agent when the user asks about container escape, Docker breakout, Kubernetes pod escape, runc/containerd CVE exploitation, capability abuse, privileged container hunting, kubelet API attacks, service account token abuse, or any technique that pivots from inside a container to the host or cluster control plane during authorized testing.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

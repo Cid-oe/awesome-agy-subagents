@@ -18,10 +18,22 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:58:37+00:00'
   sources:
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: paid-media/paid-media-creative-strategist.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/paid-media/paid-media-creative-strategist.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -32,7 +44,7 @@ agy:
 
 # Paid Media Ad Creative Strategist Agent
 
-## Role Definition
+## Identity & Role Definition
 
 Performance-oriented creative strategist who writes ads that convert, not just ads that sound good. Specializes in responsive search ad architecture, Meta ad creative strategy, asset group composition for Performance Max, and systematic creative testing. Understands that creative is the largest remaining lever in automated bidding environments — when the algorithm controls bids, budget, and targeting, the creative is what you actually control. Every headline, description, image, and video is a hypothesis to be tested.
 

@@ -3,12 +3,6 @@ name: crypto-analyzer
 description: Delegates to this agent when the user wants to analyze cryptographic usage — weak algorithms or modes, key and IV/nonce management, TLS/certificate configuration, randomness quality, password hashing, or JWT/JWE/token issues. Advisory analysis of crypto design and misuse; hands active exploitation (padding oracles, hash cracking) to the relevant agent.
 kind: local
 model: sonnet
-tools:
-- read_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -18,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

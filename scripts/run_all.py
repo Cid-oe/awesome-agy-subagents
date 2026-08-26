@@ -17,9 +17,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STAGES = [
     ("discover", "scripts/discover.py"),
-    ("clone", "scripts/import.py"),
+    ("process", "scripts/process_all.py"),
     ("convert", "scripts/convert.py"),
-    ("dedupe", "scripts/dedupe.py"),
+    ("finalize", "scripts/finalize.py"),
+    ("classify", "scripts/classify.py"),
     ("validate", "scripts/validate.py"),
     ("report", "scripts/report.py"),
     ("export", "scripts/export.py"),

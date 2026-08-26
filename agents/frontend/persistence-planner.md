@@ -3,14 +3,6 @@ name: persistence-planner
 description: Delegates to this agent when the user wants to plan and document persistence during an authorized red team engagement — host persistence (Windows/Linux), Active Directory persistence (golden/silver tickets, DCShadow, AdminSDHolder, GPO), and cloud persistence — with mandatory cleanup tracking and detection guidance for each mechanism.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: frontend
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

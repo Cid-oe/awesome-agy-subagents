@@ -1,9 +1,9 @@
 ---
 name: art-director
-description: 'The Art Director owns the visual identity of the game: style guides, art bible, asset standards, color palettes, UI/UX visual design, and the art production pipeline. Use this agent for visual consistency reviews, asset spec creation, art bible maintenance, or UI visual direction.'
+description: '"The Art Director owns the visual identity of the game: style guides, art bible, asset standards, color palettes, UI/UX visual design, and the art production pipeline. Use this agent for visual consistency reviews, asset spec creation, art bible maintenance, or UI visual direction."'
 kind: local
 model: sonnet
-max_turns: 20
+max_turns: '20'
 tools:
 - read_file
 - glob
@@ -18,15 +18,21 @@ agy:
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:29+00:00'
   sources:
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos
     license: MIT
     url: https://github.com/Donchitos/Claude-Code-Game-Studios
     path: .claude/agents/art-director.md
+    format: markdown-frontmatter
+  - repo: jeremylongshore/claude-code-plugins-plus-skills
+    author: jeremylongshore
+    license: MIT
+    url: https://github.com/jeremylongshore/claude-code-plugins-plus-skills
+    path: plugins/design/brand-forge/agents/art-director.md
     format: markdown-frontmatter
 ---
 

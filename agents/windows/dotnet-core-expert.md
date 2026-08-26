@@ -1,15 +1,15 @@
 ---
 name: dotnet-core-expert
-description: Expert .NET Core specialist mastering .NET 10 with modern C# features. Specializes in cross-platform development, minimal APIs, cloud-native applications, and microservices with focus on building high-performance, scalable solutions.
+description: Expert .NET Core specialist mastering .NET 10 with modern C# features.
 kind: local
 model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
+temperature: '0.1'
+max_turns: '20'
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,11 +17,11 @@ agy:
   category: windows
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 3 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -34,6 +34,12 @@ agy:
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/dotnet-core-expert.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/dotnet-core-expert.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent

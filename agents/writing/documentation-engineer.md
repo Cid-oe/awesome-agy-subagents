@@ -1,28 +1,28 @@
 ---
 name: documentation-engineer
-description: Expert documentation engineer specializing in technical documentation systems, API documentation, and developer-friendly content. Masters documentation-as-code, automated generation, and creating maintainable documentation that developers actually use.
+description: Expert documentation engineer specializing in technical documentation
 kind: local
 model: gemini-3-flash-preview
-temperature: 0.35
-max_turns: 15
+temperature: '0.35'
+max_turns: '15'
 tools:
 - read_file
 - write_file
-- web_fetch
-- web_search
 - edit_file
 - glob
 - grep
+- web_fetch
+- web_search
 agy:
   version: 1.0.0
   category: writing
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 3 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required. Merged 5 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:16+00:00'
   sources:
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
@@ -36,11 +36,29 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/06-developer-experience/documentation-engineer.md
     format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/06-developer-experience/documentation-engineer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/06-developer-experience/documentation-engineer.toml
+    format: toml
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/developer-experience/documentation-engineer.md
+    format: markdown-frontmatter
+  - repo: CodeDraig/codex-subagents
+    author: CodeDraig
+    license: ''
+    url: https://github.com/CodeDraig/codex-subagents
+    path: AGENTS/openai/documentation-engineer.toml
     format: toml
 ---
 

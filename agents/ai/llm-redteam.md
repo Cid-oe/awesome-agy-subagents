@@ -3,14 +3,6 @@ name: llm-redteam
 description: Delegates to this agent when the user asks about LLM and AI system red teaming, prompt injection (direct and indirect), jailbreak techniques, RAG poisoning, model exfiltration, training data extraction, agent and tool-use abuse, MCP server exploitation, AI guardrail bypass, or red teaming a deployed Claude/GPT/Gemini/open-weight application during authorized testing.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: ai
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

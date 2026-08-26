@@ -38,22 +38,49 @@ KNOWN_REPOS = [
 ]
 
 SEARCH_QUERIES = [
+    # keyword / name / description / topic searches
     "subagents in:name,description,topic",
     "claude code subagents",
     "claude subagents",
     "codex subagents",
     "gemini subagents",
+    "agent skills claude",
+    "claude code plugins",
+    "subagents in:readme",
+    # filename-based searches
+    "filename:AGENT.md",
+    "filename:agent.md",
+    "filename:*.agent.md",
+    "filename:CLAUDE.md",
+    "filename:SYSTEM.md",
+    "filename:instructions.md",
+    "filename:subagent.md",
+    "filename:SUBAGENT.md",
+    # path-based searches
     "path:.claude/agents",
     "path:.gemini/agents",
     "path:.codex/agents",
+    "path:.cursor/agents",
+    "path:.opencode/agents",
     "path:.agents",
+    "path:agents",
+    "path:subagents",
+    # topic searches
     "topic:claude-code",
     "topic:subagents",
     "topic:gemini-cli",
     "topic:codex",
+    "topic:cursor",
+    "topic:opencode",
+    "topic:aider",
     "topic:ai-agent",
-    "agent skills claude",
-    "claude code plugins",
+    "topic:coding-agent",
+    "topic:agent-skills",
+    "topic:claude-skills",
+    "topic:claude-agents",
+    "topic:codex-agents",
+    "topic:llm-agent",
+    "topic:antigravity",
 ]
 
 

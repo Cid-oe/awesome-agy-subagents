@@ -3,22 +3,42 @@ name: qa
 description: QA Agent. Tests all acceptance criteria and edge cases from orchestrator-output.md. Generates a structured qa-report.md with pass/fail per criterion and bug triage. Loops back to implement if bugs found (max 2 iterations).
 kind: local
 model: sonnet
+tools:
+- read_file
+- run_shell_command
+- write_file
+- edit_file
+- grep
+- list_dir
 agy:
   version: 1.0.0
   category: testing
-  tags: []
+  tags:
+  - '''QA'''
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 3 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:22+00:00'
+  imported: '2026-08-26T08:58:41+00:00'
   sources:
   - repo: wshobson/agents
     author: wshobson
     license: MIT
     url: https://github.com/wshobson/agents
     path: plugins/ship-mate/agents/qa.md
+    format: markdown-frontmatter
+  - repo: github/awesome-copilot
+    author: github
+    license: MIT
+    url: https://github.com/github/awesome-copilot
+    path: agents/qa-subagent.agent.md
+    format: markdown-frontmatter
+  - repo: SilentMoebuta/pi-roles
+    author: SilentMoebuta
+    license: MIT
+    url: https://github.com/SilentMoebuta/pi-roles
+    path: roles/qa.md
     format: markdown-frontmatter
 ---
 

@@ -1,10 +1,9 @@
 ---
 name: devops-engineer
-description: DevOps engineer specializing in CI/CD, containerization, infrastructure-as-code, observability
+description: '"DevOps engineer specializing in CI/CD, containerization, infrastructure-as-code, observability"'
 kind: local
 model: sonnet
 tools:
-- read_file
 - edit_file
 - write_file
 - run_shell_command
@@ -21,7 +20,10 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
+- list_dir
+- web_fetch
+- read_file
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -30,12 +32,13 @@ agy:
   category: devops
   tags:
   - DevOps Engineer
+  - devops_engineer
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 7 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 11 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
@@ -43,11 +46,41 @@ agy:
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/devops-engineer.md
     format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/src/agents/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: plugins/maestro/src/agents/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: src/agents/devops-engineer.md
+    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/03-infrastructure/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/03-infrastructure/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: alirezarezvani/claude-skills
+    author: alirezarezvani
+    license: MIT
+    url: https://github.com/alirezarezvani/claude-skills
+    path: agents/personas/devops-engineer.md
     format: markdown-frontmatter
   - repo: Donchitos/Claude-Code-Game-Studios
     author: Donchitos
@@ -55,29 +88,53 @@ agy:
     url: https://github.com/Donchitos/Claude-Code-Game-Studios
     path: .claude/agents/devops-engineer.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/infrastructure-devops/devops-engineer.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/03-infrastructure/devops-engineer.toml
     format: toml
-  - repo: alirezarezvani/claude-skills
-    author: alirezarezvani
-    license: MIT
-    url: https://github.com/alirezarezvani/claude-skills
-    path: agents/personas/devops-engineer.md
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/infrastructure/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: agents/devops_engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: claude/agents/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: josstei/maestro-orchestrate
+    author: josstei
+    license: Apache-2.0
+    url: https://github.com/josstei/maestro-orchestrate
+    path: qwen/agents/devops_engineer.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/infrastructure-devops/devops-engineer.md
     format: markdown-frontmatter
   - repo: ankitmundada/awesome-gemini-cli-subagents
     author: ankitmundada
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/03-infrastructure/devops-engineer.md
+    format: markdown-frontmatter
+  - repo: michielhdoteth/awesome-ai-agent-tools
+    author: michielhdoteth
+    license: CC0-1.0
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools
+    path: subagents/devops-engineer.md
     format: markdown-frontmatter
 ---
 

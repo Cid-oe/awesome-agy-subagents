@@ -1,10 +1,9 @@
 ---
 name: test-engineer
-description: Proactively design tests that verify contracts, audit flaky tests, and enforce CI integrity.
+description: '"Proactively design tests that verify contracts, audit flaky tests, and enforce CI integrity."'
 kind: local
 model: sonnet
 tools:
-- read_file
 - edit_file
 - write_file
 - run_shell_command
@@ -21,7 +20,8 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
+- read_file
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -32,15 +32,75 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 11 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
     license: MIT
     url: https://github.com/cdeust/zetetic-team-subagents
     path: agents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: Yeachan-Heo/oh-my-claudecode
+    author: Yeachan-Heo
+    license: MIT
+    url: https://github.com/Yeachan-Heo/oh-my-claudecode
+    path: agents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: addyosmani/agent-skills
+    author: addyosmani
+    license: MIT
+    url: https://github.com/addyosmani/agent-skills
+    path: agents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: anthropics/claude-plugins-official
+    author: anthropics
+    license: Apache-2.0
+    url: https://github.com/anthropics/claude-plugins-official
+    path: plugins/code-modernization/agents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: 04-subagents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: ja/04-subagents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: uk/04-subagents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: vi/04-subagents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: luongnv89/claude-howto
+    author: luongnv89
+    license: MIT
+    url: https://github.com/luongnv89/claude-howto
+    path: zh/04-subagents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: QwenLM/qwen-code
+    author: QwenLM
+    license: Apache-2.0
+    url: https://github.com/QwenLM/qwen-code
+    path: .qwen/agents/test-engineer.md
+    format: markdown-frontmatter
+  - repo: benjaminr/claude-code-essentials
+    author: benjaminr
+    license: ''
+    url: https://github.com/benjaminr/claude-code-essentials
+    path: .claude/agents/test-engineer.md
     format: markdown-frontmatter
 ---
 

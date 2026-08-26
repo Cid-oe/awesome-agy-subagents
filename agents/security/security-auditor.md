@@ -1,10 +1,9 @@
 ---
 name: security-auditor
-description: Proactively audit security when auth/crypto/billing/PII paths are touched, when dependencies change
+description: '"Proactively audit security when auth/crypto/billing/PII paths are touched, when dependencies change"'
 kind: local
 model: opus
 tools:
-- read_file
 - run_shell_command
 - glob
 - grep
@@ -21,7 +20,8 @@ tools:
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_symbol
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__search_codebase
 - mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_impact
-- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes
+- mcp__plugin_ai-architect-mcp-codebase_ai-architect__get_processes]
+- read_file
 - edit_file
 - write_file
 - list_dir
@@ -31,6 +31,7 @@ tools:
 - mcp__playwright__browser_navigate
 - mcp__playwright__browser_snapshot
 - mcp__playwright__browser_evaluate
+- todo
 mcpServers:
 - plugin_hypermnesia-mcp_cortex
 - plugin_ai-architect-mcp-codebase_ai-architect
@@ -44,14 +45,44 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 8 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: plugin_hypermnesia-mcp_cortex, plugin_ai-architect-mcp-codebase_ai-architect. Merged 21 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:12:32+00:00'
   sources:
   - repo: cdeust/zetetic-team-subagents
     author: cdeust
     license: MIT
     url: https://github.com/cdeust/zetetic-team-subagents
+    path: agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: ruvnet/ruflo
+    author: ruvnet
+    license: MIT
+    url: https://github.com/ruvnet/ruflo
+    path: v3/@claude-flow/mcp/.claude/agents/v3/security-auditor.md
+    format: markdown-frontmatter
+  - repo: anthropics/claude-plugins-official
+    author: anthropics
+    license: Apache-2.0
+    url: https://github.com/anthropics/claude-plugins-official
+    path: plugins/code-modernization/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: ruvnet/ruflo
+    author: ruvnet
+    license: MIT
+    url: https://github.com/ruvnet/ruflo
+    path: .claude/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: ruvnet/ruflo
+    author: ruvnet
+    license: MIT
+    url: https://github.com/ruvnet/ruflo
+    path: plugins/ruflo-security-audit/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: addyosmani/agent-skills
+    author: addyosmani
+    license: MIT
+    url: https://github.com/addyosmani/agent-skills
     path: agents/security-auditor.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
@@ -60,11 +91,11 @@ agy:
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/04-quality-security/security-auditor.md
     format: markdown-frontmatter
-  - repo: JosephHampton/awesome-gemini-cli-subagents
-    author: JosephHampton
-    license: NOASSERTION
-    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
-    path: agents/security/security-auditor.md
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/04-quality-security/security-auditor.md
     format: markdown-frontmatter
   - repo: VoltAgent/awesome-codex-subagents
     author: VoltAgent
@@ -72,11 +103,23 @@ agy:
     url: https://github.com/VoltAgent/awesome-codex-subagents
     path: categories/04-quality-security/security-auditor.toml
     format: toml
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
+  - repo: davepoon/buildwithclaude
+    author: davepoon
     license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/04-quality-security/security-auditor.md
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/agents-quality-security/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: davepoon/buildwithclaude
+    author: davepoon
+    license: MIT
+    url: https://github.com/davepoon/buildwithclaude
+    path: plugins/all-agents/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: rohitg00/awesome-claude-code-toolkit
+    author: rohitg00
+    license: Apache-2.0
+    url: https://github.com/rohitg00/awesome-claude-code-toolkit
+    path: agents/quality-assurance/security-auditor.md
     format: markdown-frontmatter
   - repo: iannuttall/claude-agents
     author: iannuttall
@@ -84,17 +127,77 @@ agy:
     url: https://github.com/iannuttall/claude-agents
     path: agents/security-auditor.md
     format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-agents/agents/security-auditor.md
+    format: markdown-frontmatter
   - repo: lst97/claude-code-sub-agents
     author: lst97
     license: MIT
     url: https://github.com/lst97/claude-code-sub-agents
     path: agents/security/security-auditor.md
     format: markdown-frontmatter
+  - repo: CloudAI-X/claude-workflow-v2
+    author: CloudAI-X
+    license: MIT
+    url: https://github.com/CloudAI-X/claude-workflow-v2
+    path: .codex/agents/security-auditor.toml
+    format: toml
+  - repo: CloudAI-X/claude-workflow-v2
+    author: CloudAI-X
+    license: MIT
+    url: https://github.com/CloudAI-X/claude-workflow-v2
+    path: agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: JosephHampton/awesome-gemini-cli-subagents
+    author: JosephHampton
+    license: NOASSERTION
+    url: https://github.com/JosephHampton/awesome-gemini-cli-subagents
+    path: agents/security/security-auditor.md
+    format: markdown-frontmatter
+  - repo: ankitmundada/awesome-gemini-cli-subagents
+    author: ankitmundada
+    license: MIT
+    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
+    path: categories/04-quality-security/security-auditor.md
+    format: markdown-frontmatter
+  - repo: dshakes/compass
+    author: dshakes
+    license: MIT
+    url: https://github.com/dshakes/compass
+    path: claude/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: dshakes/compass
+    author: dshakes
+    license: MIT
+    url: https://github.com/dshakes/compass
+    path: plugins/core/agents/security-auditor.md
+    format: markdown-frontmatter
   - repo: sodam-ai/SoDam-Agent
     author: sodam-ai
     license: Apache-2.0
     url: https://github.com/sodam-ai/SoDam-Agent
     path: plugins/security-audit-team/agents/security-auditor.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/wshobson/security-auditor.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/security/security-auditor.md
+    format: markdown-frontmatter
+  - repo: michielhdoteth/awesome-ai-agent-tools
+    author: michielhdoteth
+    license: CC0-1.0
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools
+    path: subagents/security-auditor.md
     format: markdown-frontmatter
 ---
 

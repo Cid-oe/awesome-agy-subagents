@@ -1,17 +1,8 @@
 ---
 name: supply-chain-auditor
-description: Delegates to this agent when the user wants to audit software supply chain risk, generate or review an SBOM, hunt for dependency confusion and typosquatting exposure, inspect lockfile and package integrity, review install-time scripts in third-party packages, assess build and artifact provenance, or evaluate the blast radius of a compromised upstream dependency during authorized security work.
+description: '>-'
 kind: local
 model: sonnet
-tools:
-- run_shell_command
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -21,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph

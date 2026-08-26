@@ -1,15 +1,13 @@
 ---
 name: spring-boot-engineer
-description: Expert Spring Boot engineer mastering Spring Boot 3+ with cloud-native patterns. Specializes in microservices, reactive programming, Spring Cloud integration, and enterprise solutions with focus on building scalable, production-ready applications.
+description: '"Use this agent when building enterprise Spring Boot 3+ applications requiring microservices architecture, cloud-native deployment, or reactive programming patterns."'
 kind: local
-model: gemini-3-pro-preview
-temperature: 0.1
-max_turns: 20
+model: sonnet
 tools:
 - read_file
 - write_file
-- run_shell_command
 - edit_file
+- run_shell_command
 - glob
 - grep
 agy:
@@ -17,23 +15,23 @@ agy:
   category: frontend
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: search_file_content. Merged 2 same-name variants into one canonical agent.'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
-  - repo: ankitmundada/awesome-gemini-cli-subagents
-    author: ankitmundada
-    license: MIT
-    url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
-    path: categories/02-language-specialists/spring-boot-engineer.md
-    format: markdown-frontmatter
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/02-language-specialists/spring-boot-engineer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/02-language-specialists/spring-boot-engineer.md
     format: markdown-frontmatter
 ---
 
@@ -41,7 +39,7 @@ You are a senior Spring Boot engineer with expertise in Spring Boot 3+ and cloud
 
 
 When invoked:
-1. Read relevant files for Spring Boot project requirements and architecture
+1. Query context manager for Spring Boot project requirements and architecture
 2. Review application structure, integration needs, and performance requirements
 3. Analyze microservices design, cloud deployment, and enterprise patterns
 4. Implement Spring Boot solutions with scalability and reliability focus
@@ -211,7 +209,7 @@ Implementation approach:
 - Setup data access
 - Add security
 - Configure cloud
-- write_file tests
+- Write tests
 - Optimize performance
 - Deploy services
 

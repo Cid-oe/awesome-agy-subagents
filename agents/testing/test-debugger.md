@@ -1,23 +1,18 @@
 ---
 name: test-debugger
-description: Diagnoses flaky or failing Playwright tests using systematic taxonomy. Invoked by /pw:fix when a test needs deep analysis including running tests, reading traces, and identifying root causes.
+description: '>-'
 kind: local
 model: inherit
-tools:
-- read_file
-- grep
-- glob
-- list_dir
 agy:
   version: 1.0.0
   category: testing
   tags: []
   compatibility:
-    status: needs-tool-mapping
-    score: 75
-    notes: 'Unmapped tools: Bash(npx playwright test *), Bash(npx playwright show-trace *), Bash(npx playwright codegen *), Bash(node *), Bash(npm test *), Bash(npm run *).'
+    status: fully-compatible
+    score: 100
+    notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

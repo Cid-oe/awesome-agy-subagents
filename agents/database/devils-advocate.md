@@ -1,6 +1,6 @@
 ---
 name: devils-advocate
-description: Adversarial reviewer for executive plans, proposals, and decisions. Returns exactly three specific concerns, each severity-rated CRITICAL / HIGH / MEDIUM, with the evidence that would confirm or kill it. Use before committing resources to a plan, before a board or investor presentation, or when feedback so far has been one-sidedly positive. Not a code reviewer.
+description: '"Adversarial reviewer for executive plans, proposals, and decisions. Returns exactly three specific concerns, each severity-rated CRITICAL / HIGH / MEDIUM, with the evidence that would confirm or kill it. Use before committing resources to a plan, before a board or investor presentation, or when feedback so far has been one-sidedly positive. Not a code reviewer."'
 kind: local
 model: inherit
 agy:
@@ -12,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

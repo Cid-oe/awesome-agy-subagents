@@ -1,6 +1,6 @@
 ---
 name: experiment-runner
-description: Runs one iteration of an autoresearch experiment loop. Reads experiment state from .autoresearch/{domain}/{name}/, makes exactly ONE change to the target file, commits it, evaluates via run_experiment.py, and reports KEEP / DISCARD / CRASH. Spawned per iteration by /ar:run and /ar:loop. Never modifies the evaluator. Not for general refactoring or multi-change edits.
+description: '"Runs one iteration of an autoresearch experiment loop. Reads experiment state from .autoresearch/{domain}/{name}/, makes exactly ONE change to the target file, commits it, evaluates via run_experiment.py, and reports KEEP / DISCARD / CRASH. Spawned per iteration by /ar:run and /ar:loop. Never modifies the evaluator. Not for general refactoring or multi-change edits."'
 kind: local
 model: inherit
 agy:
@@ -12,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

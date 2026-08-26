@@ -25,6 +25,8 @@ def main() -> None:
     cloned = load(META_DIR / "cloned_repos.json", {})
     dedupe = load(META_DIR / "dedupe_report.json", {})
     validation = load(META_DIR / "validation_report.json", {})
+    repo_status = load(META_DIR / "repo_status.json", {})
+    repo_scan = load(META_DIR / "repo_scan.json", {})
 
     # Derive scanned repositories from the filesystem if registry is stale.
     sources_dir = ROOT / "imports" / "sources"
@@ -34,7 +36,9 @@ def main() -> None:
     discovered_by_slug = {}
     for r in repos:
         discovered_by_slug[r["full_name"].replace("/", "--")] = r
-    scanned = len(cloned) or len(scanned_dirs)
+    # The number of repositories evaluated comes from the classification
+    # registries (source clones are streamed and deleted to bound disk usage).
+    scanned = len(repo_status) or len(repo_scan) or len(cloned) or len(scanned_dirs)
     if not cloned and scanned_dirs:
         cloned = {}
         for d in scanned_dirs:
@@ -79,9 +83,21 @@ def main() -> None:
     fully = status_counter.get("fully-compatible", 0)
     conv_rate = round(100 * fully / n, 1) if n else 0
 
+    # Repository classification / coverage statistics.
+    from collections import Counter as _C
+    repo_class = _C(v.get("status", "?") for v in repo_status.values())
+    n_disc = len(repos)
+    n_class = len(repo_status)
+    coverage_pct = round(100 * n_class / n_disc, 1) if n_disc else 0
+    # Per-repo agent counts (from the deduped corpus) for per-source stats.
+    per_repo = _C()
+    for a in agents:
+        for s in a.get("sources", []):
+            per_repo[s.get("repo", "?")] += 1
+
     summary = {
         "generated_at": __import__("agy").now_iso(),
-        "repositories_scanned": len(cloned),
+        "repositories_scanned": scanned,
         "repositories_discovered": len(repos),
         "agents_discovered": dedupe.get("total_before", n),
         "agents_converted": n,
@@ -97,6 +113,10 @@ def main() -> None:
         "mcp_dependencies": dict(mcp_counter),
         "repositories_contributing": dict(repo_counter),
         "licenses": dict(license_counter),
+        "repositories_classified": dict(repo_class),
+        "coverage_percentage": coverage_pct,
+        "repositories_not_evaluated": n_disc - n_class,
+        "per_source_agent_counts": dict(per_repo.most_common()),
     }
     (META_DIR / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
 
@@ -117,6 +137,19 @@ def main() -> None:
         f"| Average compatibility score | {summary['average_compatibility_score']} |",
         "",
     ]
+    L += ["## Ecosystem coverage", "",
+          f"- Repositories discovered: **{summary['repositories_discovered']}**",
+          f"- Repositories evaluated/classified: **{n_class}** "
+          f"({summary['coverage_percentage']}%)",
+          f"- Repositories not yet evaluated: **{summary['repositories_not_evaluated']}**",
+          ""]
+    L += ["### Repository classification", "",
+          "| Status | Repositories |", "|---|---|"]
+    order = ["imported", "duplicate", "unsupported", "empty", "non-agent",
+             "requires-manual-review"]
+    for s in order:
+        L.append(f"| {s} | {repo_class.get(s, 0)} |")
+    L.append("")
     (REPORTS / "summary.md").write_text("\n".join(L), encoding="utf-8")
 
     # --- categories.md ---
@@ -172,13 +205,16 @@ def main() -> None:
     L.append("")
     L.append("## All discovered repositories")
     L.append("")
-    L += ["| Repository | Stars | License | Description |", "|---|---|---|---|"]
+    L += ["| Repository | Stars | License | Status | Description |",
+          "|---|---|---|---|---|"]
     for r in repos:
-        L.append(f"| {r['full_name']} | {r.get('stars',0)} | {r.get('license') or '—'} | {(r.get('description') or '')[:70]} |")
+        st = repo_status.get(r["full_name"], {}).get("status", "not-evaluated")
+        L.append(f"| {r['full_name']} | {r.get('stars',0)} | {r.get('license') or '—'} | "
+                 f"{st} | {(r.get('description') or '')[:60]} |")
     L.append("")
     (REPORTS / "repositories.md").write_text("\n".join(L), encoding="utf-8")
 
-    print(f"Summary: {n} agents, {len(cloned)} repos scanned, {conv_rate}% conversion rate.")
+    print(f"Summary: {n} agents, {scanned} repos scanned, {conv_rate}% conversion rate.")
     print("Reports written to reports/ and metadata/summary.json")
 
 

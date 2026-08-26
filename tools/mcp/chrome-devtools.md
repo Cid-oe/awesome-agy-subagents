@@ -18,9 +18,9 @@ chrome_devtools(...)
 Linux, macOS, Windows
 
 ## Referenced by imported agents
-Not yet referenced by any imported agent (standard integration).
+Used by **1** agent(s) in this corpus.
 
-
+- design-review
 
 ## Compatibility
 

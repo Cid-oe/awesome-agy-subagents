@@ -502,6 +502,10 @@ def extract_agent(path: Path, source: SourceInfo, relpath: str | None = None) ->
         if isinstance(fm, dict):
             body = fm.get("prompt") or fm.get("system_prompt") or fm.get("instructions") or ""
 
+    # Body from structured formats may be a non-string (int/bool/list).
+    if not isinstance(body, str):
+        body = str(body) if body is not None else ""
+
     if not isinstance(fm, dict):
         fm = {}
 
@@ -601,6 +605,24 @@ def extract_agent(path: Path, source: SourceInfo, relpath: str | None = None) ->
         rec.tags.append(name)
     rec.category = categorize(rec.name, description, body, rec.tags)
     return rec
+
+
+def extract_repo_records(repo_dir: Path, repo_name: str, license_name: str = "",
+                         url: str | None = None) -> list[AgentRecord]:
+    """Extract all usable AgentRecords from a cloned repository directory."""
+    records: list[AgentRecord] = []
+    url = url or f"https://github.com/{repo_name}"
+    for f in iter_agent_files(repo_dir):
+        rel = f.relative_to(repo_dir)
+        src = SourceInfo(repo=repo_name, author=repo_name.split("/")[0],
+                         license=license_name, url=url, path=str(rel))
+        rec = extract_agent(f, src, relpath=str(rel))
+        if rec is None:
+            continue
+        if len(rec.body) < 40:
+            continue
+        records.append(rec)
+    return records
 
 
 def render_agent_markdown(rec: AgentRecord) -> str:

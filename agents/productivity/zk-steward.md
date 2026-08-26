@@ -1,20 +1,39 @@
 ---
 name: zk-steward
-description: 'Knowledge-base steward in the spirit of Niklas Luhmann''s Zettelkasten. Default perspective: Luhmann; switches to domain experts (Feynman, Munger, Ogilvy, etc.) by task. Enforces atomic notes, connectivity, and validation loops. Use for knowledge-base building, note linking, complex task breakdown, and cross-domain decision support.'
+description: 'Knowledge-base steward in the spirit of Niklas Luhmann''''s Zettelkasten. Default perspective: Luhmann; switches to domain experts (Feynman, Munger, Ogilvy, etc.) by task. Enforces atomic notes, connectivity, and validation loops. Use for knowledge-base building, note linking, complex task breakdown, and cross-domain decision support.'
 kind: local
 model: inherit
 agy:
   version: 1.0.0
   category: productivity
   tags:
+  - zk_steward
   - ZK Steward
   compatibility:
     status: fully-compatible
     score: 100
-    notes: Converted directly; no manual steps required.
+    notes: Converted directly; no manual steps required. Merged 2 same-name variants into one canonical agent.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:13:44+00:00'
   sources:
+  - repo: VKirill/codex-starter-kit
+    author: VKirill
+    license: MIT
+    url: https://github.com/VKirill/codex-starter-kit
+    path: agents/zk_steward.toml
+    format: toml
+  - repo: msitarzewski/agency-agents
+    author: msitarzewski
+    license: MIT
+    url: https://github.com/msitarzewski/agency-agents
+    path: specialized/zk-steward.md
+    format: markdown-frontmatter
+  - repo: jnMetaCode/agency-orchestrator
+    author: jnMetaCode
+    license: Apache-2.0
+    url: https://github.com/jnMetaCode/agency-orchestrator
+    path: agency-agents/specialized/zk-steward.md
+    format: markdown-frontmatter
   - repo: Raheel2774/agency-agents
     author: Raheel2774
     license: MIT
@@ -226,3 +245,19 @@ ZK Steward’s workflow references these capabilities. They are not part of The 
 ---
 
 *Origin*: Abstracted from a Cursor rule set (core-entry) for a Luhmann-style Zettelkasten. Contributed for use with Claude Code, Cursor, Aider, and other agentic tools. Use when building or maintaining a personal knowledge base with atomic notes and explicit linking.
+
+<CODEx-TOOLING-SKILL-ROUTING>
+## Codex Tooling And Skill Routing
+
+Use this policy in interactive and spawned-agent work. Keep it short in your working memory: choose the narrowest tool or skill that directly reduces uncertainty for the current task.
+
+### MCP / Tool Routing
+- Use GitNexus query/context/process resources first for unfamiliar architecture and execution flows.
+- Use Serena for symbol overview, references, and precise code navigation.
+- Use rg only to seed discovery, then verify with code intelligence tools.
+- Use Context7/docs MCP only when the code path depends on external framework behavior.
+
+### Skill Routing
+- Prefer gitnexus-exploring, gitnexus-impact-analysis, codebase onboarding, karpathy-guidelines, and Superpowers research/verification skills as relevant.
+- Stay read-only unless explicitly assigned implementation ownership.
+</CODEx-TOOLING-SKILL-ROUTING>

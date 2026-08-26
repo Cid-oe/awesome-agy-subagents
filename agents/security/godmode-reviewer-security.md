@@ -12,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:11:42+00:00'
   sources:
   - repo: arbazkhan971/godmode
     author: arbazkhan971

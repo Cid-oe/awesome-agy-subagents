@@ -26,9 +26,9 @@ agy:
   compatibility:
     status: requires-mcp
     score: 85
-    notes: 'Requires MCP servers: context7, sequential-thinking. Merged 2 same-name variants into one canonical agent.'
+    notes: 'Requires MCP servers: context7, sequential-thinking. Merged 3 same-name variants into one canonical agent.'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T09:07:27+00:00'
   sources:
   - repo: lst97/claude-code-sub-agents
     author: lst97
@@ -41,6 +41,12 @@ agy:
     license: MIT
     url: https://github.com/ankitmundada/awesome-gemini-cli-subagents
     path: categories/01-core-development/electron-pro.md
+    format: markdown-frontmatter
+  - repo: leamas-ai/leamas.sh
+    author: leamas-ai
+    license: MIT
+    url: https://github.com/leamas-ai/leamas.sh
+    path: kits/agents/claude-code-sub-agents/development/electorn-pro.md
     format: markdown-frontmatter
 ---
 

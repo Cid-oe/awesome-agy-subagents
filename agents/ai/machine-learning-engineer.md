@@ -1,6 +1,6 @@
 ---
 name: machine-learning-engineer
-description: Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments.
+description: '"Use this agent when you need to deploy, optimize, or serve machine learning models at scale in production environments."'
 kind: local
 model: sonnet
 tools:
@@ -19,13 +19,19 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T08:59:26+00:00'
   sources:
   - repo: VoltAgent/awesome-claude-code-subagents
     author: VoltAgent
     license: MIT
     url: https://github.com/VoltAgent/awesome-claude-code-subagents
     path: categories/05-data-ai/machine-learning-engineer.md
+    format: markdown-frontmatter
+  - repo: ayush-that/sub-agents.directory
+    author: ayush-that
+    license: MIT
+    url: https://github.com/ayush-that/sub-agents.directory
+    path: content/05-data-ai/machine-learning-engineer.md
     format: markdown-frontmatter
 ---
 

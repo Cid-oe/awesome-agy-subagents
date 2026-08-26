@@ -1,6 +1,6 @@
 # Tools Catalog
 
-Total documented tools: **113**
+Total documented tools: **152**
 
 ## Core AGY built-in tools
 
@@ -120,3 +120,42 @@ Total documented tools: **113**
 - [`rss`](mcp/rss.md) — RSS feed reading and parsing.
 - [`hacker-news`](mcp/hacker-news.md) — Hacker News stories and comments.
 - [`google-maps`](mcp/google-maps.md) — Google Maps geocoding and places.
+- [`meigen`](mcp/meigen.md) — AI inspiration and gallery search for creative agents.
+- [`magic`](mcp/magic.md) — 21st.dev Magic component builder/refiner for UI agents.
+- [`bgpt`](mcp/bgpt.md) — B-GPT paper search and retrieval.
+- [`prompt-to-asset`](mcp/prompt-to-asset.md) — Convert a natural-language prompt into a generated asset.
+- [`openaiDeveloperDocs`](mcp/openaiDeveloperDocs.md) — OpenAI developer documentation lookup.
+- [`chrome_devtools`](mcp/chrome_devtools.md) — Chrome DevTools Protocol debugging and inspection.
+- [`ESLint`](mcp/ESLint.md) — Custom MCP server referenced by imported agents: ESLint
+- [`XcodeBuildMCP`](mcp/XcodeBuildMCP.md) — Custom MCP server referenced by imported agents: XcodeBuildMCP
+- [`agentmemory`](mcp/agentmemory.md) — Custom MCP server referenced by imported agents: agentmemory
+- [`apple-docs`](mcp/apple-docs.md) — Custom MCP server referenced by imported agents: apple-docs
+- [`astro-docs`](mcp/astro-docs.md) — Custom MCP server referenced by imported agents: astro-docs
+- [`awslabs-aws-api`](mcp/awslabs-aws-api.md) — Custom MCP server referenced by imported agents: awslabs-aws-api
+- [`azure_databases`](mcp/azure_databases.md) — Custom MCP server referenced by imported agents: azure_databases
+- [`azure_services`](mcp/azure_services.md) — Custom MCP server referenced by imported agents: azure_services
+- [`basic-memory`](mcp/basic-memory.md) — Custom MCP server referenced by imported agents: basic-memory
+- [`claude-flow`](mcp/claude-flow.md) — Custom MCP server referenced by imported agents: claude-flow
+- [`dataforseo`](mcp/dataforseo.md) — Custom MCP server referenced by imported agents: dataforseo
+- [`dolt-mcp-vcs`](mcp/dolt-mcp-vcs.md) — Custom MCP server referenced by imported agents: dolt-mcp-vcs
+- [`dsh-crew`](mcp/dsh-crew.md) — Custom MCP server referenced by imported agents: dsh-crew
+- [`fuse-browser`](mcp/fuse-browser.md) — Custom MCP server referenced by imported agents: fuse-browser
+- [`gemini-design`](mcp/gemini-design.md) — Custom MCP server referenced by imported agents: gemini-design
+- [`gitnexus`](mcp/gitnexus.md) — Custom MCP server referenced by imported agents: gitnexus
+- [`ide`](mcp/ide.md) — Custom MCP server referenced by imported agents: ide
+- [`kafka`](mcp/kafka.md) — Custom MCP server referenced by imported agents: kafka
+- [`laravel-boost`](mcp/laravel-boost.md) — Custom MCP server referenced by imported agents: laravel-boost
+- [`microsoft_learn`](mcp/microsoft_learn.md) — Custom MCP server referenced by imported agents: microsoft_learn
+- [`nuxt-remote`](mcp/nuxt-remote.md) — Custom MCP server referenced by imported agents: nuxt-remote
+- [`nuxt-ui-remote`](mcp/nuxt-ui-remote.md) — Custom MCP server referenced by imported agents: nuxt-ui-remote
+- [`omega-memory`](mcp/omega-memory.md) — Custom MCP server referenced by imported agents: omega-memory
+- [`plugin_ai-architect-mcp-codebase_ai-architect`](mcp/plugin_ai-architect-mcp-codebase_ai-architect.md) — Custom MCP server referenced by imported agents: plugin_ai-architect-mcp-codebas
+- [`plugin_hypermnesia-mcp_cortex`](mcp/plugin_hypermnesia-mcp_cortex.md) — Custom MCP server referenced by imported agents: plugin_hypermnesia-mcp_cortex
+- [`scala-semantic`](mcp/scala-semantic.md) — Custom MCP server referenced by imported agents: scala-semantic
+- [`serena`](mcp/serena.md) — Custom MCP server referenced by imported agents: serena
+- [`shadcn`](mcp/shadcn.md) — Custom MCP server referenced by imported agents: shadcn
+- [`shellgate`](mcp/shellgate.md) — Custom MCP server referenced by imported agents: shellgate
+- [`task-master`](mcp/task-master.md) — Custom MCP server referenced by imported agents: task-master
+- [`vue-docs`](mcp/vue-docs.md) — Custom MCP server referenced by imported agents: vue-docs
+- [`xquik`](mcp/xquik.md) — Custom MCP server referenced by imported agents: xquik
+- [`zen`](mcp/zen.md) — Custom MCP server referenced by imported agents: zen

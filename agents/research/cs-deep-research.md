@@ -4,7 +4,6 @@ description: Rigor-first meta-research persona for high-stakes questions. Refram
 kind: local
 model: opus
 tools:
-- read_file
 - write_file
 - run_shell_command
 - web_fetch
@@ -16,9 +15,9 @@ agy:
   compatibility:
     status: needs-tool-mapping
     score: 75
-    notes: 'Unmapped tools: Task.'
+    notes: 'Unmapped tools: [Read, Task].'
   validation: passed
-  imported: '2026-08-25T06:49:21+00:00'
+  imported: '2026-08-26T08:58:27+00:00'
   sources:
   - repo: alirezarezvani/claude-skills
     author: alirezarezvani

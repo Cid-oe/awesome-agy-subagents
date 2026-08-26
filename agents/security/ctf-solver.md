@@ -3,14 +3,6 @@ name: ctf-solver
 description: Delegates to this agent when the user is working on CTF challenges, capture the flag competitions, HackTheBox machines, TryHackMe rooms, or needs help with CTF methodology including web exploitation, binary exploitation, cryptography, forensics, reverse engineering, or privilege escalation challenges.
 kind: local
 model: sonnet
-tools:
-- read_file
-- write_file
-- edit_file
-- grep
-- glob
-- web_fetch
-- web_search
 agy:
   version: 1.0.0
   category: security
@@ -20,7 +12,7 @@ agy:
     score: 100
     notes: Converted directly; no manual steps required.
   validation: passed
-  imported: '2026-08-25T06:49:20+00:00'
+  imported: '2026-08-26T09:07:06+00:00'
   sources:
   - repo: 0xSteph/pentest-ai-agents
     author: 0xSteph
