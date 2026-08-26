@@ -1,0 +1,54 @@
+# Reference GitHub Actions workflow for scheduled re-imports.
+#
+# Copy this to `.github/workflows/import.yml` in your own fork/instance to
+# re-run the import pipeline weekly and open a pull request automatically.
+#
+# Note: pushing files under `.github/workflows/` requires the `workflows`
+# permission on the acting token/App; this template is kept outside that path
+# so the repository itself can be pushed with a narrower token scope.
+
+name: Import & update agents
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # every Monday 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run import pipeline
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/run_all.py
+
+      - name: Create or update pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh imported agents"
+          title: "Refresh imported agents"
+          body: |
+            Automated re-run of the AGY import pipeline.
+
+            - Discovered new repositories
+            - Converted / updated agents
+            - Removed duplicates
+            - Regenerated reports and tool catalog
+
+            Review `reports/summary.md` and `reports/compatibility.md`.
+          branch: auto/refresh-agents
+          delete-branch: true

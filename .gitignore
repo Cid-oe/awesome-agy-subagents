@@ -1,0 +1,14 @@
+# Imported source repositories (re-cloned by scripts/import.py on demand)
+imports/sources/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
